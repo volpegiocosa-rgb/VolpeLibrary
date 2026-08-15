@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Arricchisce il registro giochi (xlsx) con i dati scaricati da BoardGameGeek (BGG).
 
-Legge `legacy/Registro_giochi.xlsx` (foglio "Tabella", colonne Gioco / Posizione /
-Numero) e per ogni gioco cerca su BGG giocatori minimi, massimi, durata e peso
-(complessita'). Scrive un JSON completo (dati del registro + dati BGG) in
+Legge `legacy/Registro_giochi.xlsx` (foglio "Tabella", colonne Gioco / Posizione)
+e per ogni gioco cerca su BGG giocatori minimi, massimi, durata, peso
+(complessita'), tipo (boardgame/espansione/accessorio), categorie, meccaniche
+e famiglie. Scrive un JSON completo (dati del registro + dati BGG) in
 `output/catalogo_bgg.json`. La cartella `legacy/` viene solo letta, mai scritta.
 
 Uso:
@@ -39,6 +40,10 @@ import requests
 BASE_URL = "https://boardgamegeek.com/xmlapi2"
 SEARCH_URL = f"{BASE_URL}/search"
 THING_URL = f"{BASE_URL}/thing"
+
+LINK_TYPE_CATEGORY = "boardgamecategory"
+LINK_TYPE_MECHANIC = "boardgamemechanic"
+LINK_TYPE_FAMILY = "boardgamefamily"
 
 REQUEST_TIMEOUT = 15  # secondi
 QUEUE_RETRY_DELAY = 2  # secondi, per il retry su HTTP 202 (richiesta in coda)
@@ -78,13 +83,16 @@ class BggGameInfo:
     giocatori_max: int | None
     durata_minuti: int | None
     peso: float | None  # "weight" BGG: complessita' media, scala 1-5
+    tipo: str | None  # attributo "type" dell'item: boardgame, boardgameexpansion, ...
+    categorie: list[str]
+    meccaniche: list[str]
+    famiglie: list[str]
 
 
 @dataclass
 class RegistroEntry:
     gioco: str
     posizione: str
-    numero: int | None
 
 
 def _auth_headers(token: str) -> dict:
@@ -170,8 +178,16 @@ def _pick_best_match(nome: str, candidati: list[BggSearchResult]) -> BggSearchRe
     return candidati[0]
 
 
+def _link_values(item: ET.Element, link_type: str) -> list[str]:
+    return [
+        link.get("value")
+        for link in item.findall("link")
+        if link.get("type") == link_type and link.get("value")
+    ]
+
+
 def get_game_details(bgg_id: str, token: str) -> BggGameInfo:
-    """Scarica i dettagli (giocatori, durata, peso) per un id BGG."""
+    """Scarica i dettagli (giocatori, durata, peso, tipo, categorie, meccaniche, famiglie) per un id BGG."""
     root = _request_with_queue_retry(THING_URL, {"id": bgg_id, "stats": 1}, token)
 
     item = root.find("item")
@@ -199,6 +215,10 @@ def get_game_details(bgg_id: str, token: str) -> BggGameInfo:
         giocatori_max=_int_value("maxplayers"),
         durata_minuti=_int_value("playingtime"),
         peso=peso,
+        tipo=item.get("type"),
+        categorie=_link_values(item, LINK_TYPE_CATEGORY),
+        meccaniche=_link_values(item, LINK_TYPE_MECHANIC),
+        famiglie=_link_values(item, LINK_TYPE_FAMILY),
     )
 
 
@@ -215,7 +235,7 @@ def lookup_game(nome: str, token: str) -> BggGameInfo:
 def read_registro(
     xlsx_path: Path, sheet_name: str = DEFAULT_SHEET_NAME
 ) -> list[RegistroEntry]:
-    """Legge il registro giochi dall'xlsx compilato a mano (colonne Gioco/Posizione/Numero)."""
+    """Legge il registro giochi dall'xlsx compilato a mano (colonne Gioco/Posizione)."""
     wb = openpyxl.load_workbook(xlsx_path, data_only=True)
     if sheet_name not in wb.sheetnames:
         raise BggError(
@@ -227,7 +247,7 @@ def read_registro(
     righe = ws.iter_rows(values_only=True)
     intestazione = [str(h).strip() if h else "" for h in next(righe)]
 
-    colonne_richieste = ("Gioco", "Posizione", "Numero")
+    colonne_richieste = ("Gioco", "Posizione")
     try:
         indici = {col: intestazione.index(col) for col in colonne_richieste}
     except ValueError as exc:
@@ -242,17 +262,10 @@ def read_registro(
         if not gioco:
             continue
         posizione = riga[indici["Posizione"]] or ""
-        numero = riga[indici["Numero"]]
-        try:
-            numero_int = int(numero) if numero not in (None, "") else None
-        except (TypeError, ValueError):
-            # Es. celle con errori Excel tipo "#N/A": non blocca la lettura del registro.
-            numero_int = None
         voci.append(
             RegistroEntry(
                 gioco=str(gioco).strip(),
                 posizione=str(posizione).strip(),
-                numero=numero_int,
             )
         )
     return voci
@@ -292,12 +305,15 @@ def build_catalog(
         record = {
             "Gioco": voce.gioco,
             "Posizione": voce.posizione,
-            "Numero": voce.numero,
             "bgg_id": None,
             "giocatori_min": None,
             "giocatori_max": None,
             "durata_minuti": None,
             "peso": None,
+            "tipo": None,
+            "categorie": [],
+            "meccaniche": [],
+            "famiglie": [],
             "bgg_errore": None,
         }
 
@@ -316,6 +332,10 @@ def build_catalog(
                 giocatori_max=info.giocatori_max,
                 durata_minuti=info.durata_minuti,
                 peso=info.peso,
+                tipo=info.tipo,
+                categorie=info.categorie,
+                meccaniche=info.meccaniche,
+                famiglie=info.famiglie,
             )
 
         risultati.append(record)
@@ -340,6 +360,10 @@ def _print_game_info(info: BggGameInfo, as_json: bool) -> None:
                     "giocatori_max": info.giocatori_max,
                     "durata_minuti": info.durata_minuti,
                     "peso": info.peso,
+                    "tipo": info.tipo,
+                    "categorie": info.categorie,
+                    "meccaniche": info.meccaniche,
+                    "famiglie": info.famiglie,
                 },
                 ensure_ascii=False,
                 indent=2,
@@ -350,6 +374,10 @@ def _print_game_info(info: BggGameInfo, as_json: bool) -> None:
         print(f"Giocatori: {info.giocatori_min}-{info.giocatori_max}")
         print(f"Durata: {info.durata_minuti} minuti")
         print(f"Peso: {info.peso}")
+        print(f"Tipo: {info.tipo}")
+        print(f"Categorie: {', '.join(info.categorie)}")
+        print(f"Meccaniche: {', '.join(info.meccaniche)}")
+        print(f"Famiglie: {', '.join(info.famiglie)}")
 
 
 def _parse_args(argv: list[str]) -> argparse.Namespace:
