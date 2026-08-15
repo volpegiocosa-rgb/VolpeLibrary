@@ -3,9 +3,10 @@
 
 Legge `legacy/Registro_giochi.xlsx` (foglio "Tabella", colonne Gioco / Posizione)
 e per ogni gioco cerca su BGG giocatori minimi, massimi, durata, peso
-(complessita'), tipo (boardgame/espansione/accessorio), categorie, meccaniche
-e famiglie. Scrive un JSON completo (dati del registro + dati BGG) in
-`output/catalogo_bgg.json`. La cartella `legacy/` viene solo letta, mai scritta.
+(complessita'), tipo (subdomain BGG: Abstract Game, Strategy Game, Family
+Game, ...), categorie, meccaniche e famiglie. Scrive un JSON completo (dati
+del registro + dati BGG) in `output/catalogo_bgg.json`. La cartella `legacy/`
+viene solo letta, mai scritta.
 
 Uso:
     export BGG_API_TOKEN="il-tuo-token"
@@ -48,13 +49,15 @@ RANK_TYPE_SUBDOMAIN = "family"  # es. Abstract/Strategy/Family/Party/Thematic/Wa
 
 REQUEST_TIMEOUT = 15  # secondi
 QUEUE_RETRY_DELAY = 2  # secondi, per il retry su HTTP 202 (richiesta in coda)
-QUEUE_MAX_RETRIES = 5
+RATE_LIMIT_INITIAL_DELAY = 5  # secondi, per il retry su HTTP 429 (rate limit); raddoppia ad ogni tentativo
+RATE_LIMIT_MAX_DELAY = 120  # secondi
+MAX_RETRIES = 10
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_XLSX_PATH = REPO_ROOT / "legacy" / "Registro_giochi.xlsx"
 DEFAULT_SHEET_NAME = "Tabella"
 DEFAULT_OUTPUT_PATH = REPO_ROOT / "output" / "catalogo_bgg.json"
-DEFAULT_REQUEST_DELAY = 2.0  # secondi tra una scheda e l'altra, per rispettare i rate limit BGG
+DEFAULT_REQUEST_DELAY = 5.0  # secondi tra una scheda e l'altra, per rispettare i rate limit BGG
 
 
 class BggError(Exception):
@@ -103,21 +106,28 @@ def _auth_headers(token: str) -> dict:
     }
 
 
-def _request_with_queue_retry(url: str, params: dict, token: str) -> ET.Element:
-    """Esegue una GET verso la XML API2 gestendo auth e la coda asincrona di BGG.
+def _request_with_retry(url: str, params: dict, token: str) -> ET.Element:
+    """Esegue una GET verso la XML API2 gestendo auth, coda asincrona e rate limit.
 
-    BGG puo' rispondere 202 mentre prepara i dati (in particolare su /thing):
-    in quel caso va ripetuta la richiesta dopo una breve pausa.
+    BGG puo' rispondere 202 mentre prepara i dati (in particolare su /thing): in
+    quel caso va ripetuta la richiesta dopo una breve pausa fissa. Puo' anche
+    rispondere 429 (troppe richieste): in quel caso si aspetta l'header
+    Retry-After se presente, altrimenti un backoff esponenziale, stampando
+    sempre a schermo cosa sta succedendo cosi' l'utente vede perche' il run
+    rallenta invece di sembrare bloccato.
     """
     headers = _auth_headers(token)
+    rate_limit_delay = RATE_LIMIT_INITIAL_DELAY
 
-    for attempt in range(QUEUE_MAX_RETRIES):
+    for attempt in range(MAX_RETRIES):
         try:
             response = requests.get(
                 url, params=params, headers=headers, timeout=REQUEST_TIMEOUT
             )
         except requests.RequestException as exc:
-            raise BggError(f"Errore di rete verso BGG: {exc}") from exc
+            print(f"  errore di rete, ritento: {exc}", file=sys.stderr)
+            time.sleep(RATE_LIMIT_INITIAL_DELAY)
+            continue
 
         if response.status_code in (401, 403):
             raise BggAuthError(
@@ -128,7 +138,26 @@ def _request_with_queue_retry(url: str, params: dict, token: str) -> ET.Element:
 
         if response.status_code == 202:
             # Richiesta accettata ma dati non ancora pronti: ritenta.
+            print(
+                f"  BGG sta ancora preparando i dati (202), riprovo tra {QUEUE_RETRY_DELAY}s...",
+                file=sys.stderr,
+            )
             time.sleep(QUEUE_RETRY_DELAY)
+            continue
+
+        if response.status_code == 429:
+            retry_after = response.headers.get("Retry-After")
+            if retry_after and retry_after.replace(".", "", 1).isdigit():
+                attesa = float(retry_after)
+            else:
+                attesa = rate_limit_delay
+                rate_limit_delay = min(rate_limit_delay * 2, RATE_LIMIT_MAX_DELAY)
+            print(
+                f"  RATE LIMIT (429) da BGG: aspetto {attesa:.0f}s e ritento "
+                f"(tentativo {attempt + 1}/{MAX_RETRIES})...",
+                file=sys.stderr,
+            )
+            time.sleep(attesa)
             continue
 
         if not response.ok:
@@ -142,13 +171,13 @@ def _request_with_queue_retry(url: str, params: dict, token: str) -> ET.Element:
             raise BggError(f"Risposta XML non valida da BGG: {exc}") from exc
 
     raise BggError(
-        f"BGG e' rimasto in coda (HTTP 202) per {QUEUE_MAX_RETRIES} tentativi, riprova piu' tardi."
+        f"Troppi tentativi falliti (coda/rate-limit/rete) per {url}, riprova piu' tardi."
     )
 
 
 def search_game(nome: str, token: str) -> list[BggSearchResult]:
     """Cerca un gioco per nome e restituisce i candidati trovati su BGG."""
-    root = _request_with_queue_retry(
+    root = _request_with_retry(
         SEARCH_URL, {"query": nome, "type": "boardgame"}, token
     )
 
@@ -204,7 +233,7 @@ def _subdomain_types(item: ET.Element) -> list[str]:
 
 def get_game_details(bgg_id: str, token: str) -> BggGameInfo:
     """Scarica i dettagli (giocatori, durata, peso, tipo, categorie, meccaniche, famiglie) per un id BGG."""
-    root = _request_with_queue_retry(THING_URL, {"id": bgg_id, "stats": 1}, token)
+    root = _request_with_retry(THING_URL, {"id": bgg_id, "stats": 1}, token)
 
     item = root.find("item")
     if item is None:
@@ -299,8 +328,10 @@ def build_catalog(
     """Legge il registro xlsx, interroga BGG per ogni gioco e scrive il JSON completo.
 
     Salva il JSON dopo ogni gioco elaborato, cosi' un'interruzione (rete, rate
-    limit, Ctrl+C) non fa perdere il lavoro gia' fatto; con --resume i giochi
-    gia' presenti in output_path vengono saltati.
+    limit, Ctrl+C) non fa perdere il lavoro gia' fatto. Con --resume i giochi
+    gia' presenti in output_path e recuperati CON SUCCESSO vengono saltati;
+    quelli che in precedenza avevano dato errore (es. rate limit transitorio)
+    vengono invece ritentati.
     """
     voci = read_registro(xlsx_path, sheet_name)
     if limit is not None:
@@ -310,8 +341,18 @@ def build_catalog(
     gia_elaborati: set[str] = set()
     if resume and output_path.exists():
         with open(output_path, encoding="utf-8") as f:
-            risultati = json.load(f)
-        gia_elaborati = {voce["Gioco"] for voce in risultati}
+            precedenti = json.load(f)
+        da_ritentare = 0
+        for voce in precedenti:
+            if voce.get("bgg_errore"):
+                da_ritentare += 1
+                continue
+            risultati.append(voce)
+            gia_elaborati.add(voce["Gioco"])
+        print(
+            f"Ripresa: {len(gia_elaborati)} gia' completati, {da_ritentare} da ritentare.",
+            file=sys.stderr,
+        )
 
     for i, voce in enumerate(voci, start=1):
         if voce.gioco in gia_elaborati:
@@ -361,6 +402,23 @@ def build_catalog(
 
         if i < len(voci):
             time.sleep(delay)
+
+    ordine = {voce.gioco: i for i, voce in enumerate(voci)}
+    risultati.sort(key=lambda r: ordine.get(r["Gioco"], len(voci)))
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(risultati, f, ensure_ascii=False, indent=2)
+
+    falliti = [r for r in risultati if r.get("bgg_errore")]
+    print(
+        f"Riepilogo: {len(risultati)} totali, "
+        f"{len(risultati) - len(falliti)} riusciti, {len(falliti)} falliti.",
+        file=sys.stderr,
+    )
+    if falliti:
+        print("Giochi falliti:", file=sys.stderr)
+        for r in falliti:
+            print(f"  - {r['Gioco']}: {r['bgg_errore']}", file=sys.stderr)
 
     return risultati
 
