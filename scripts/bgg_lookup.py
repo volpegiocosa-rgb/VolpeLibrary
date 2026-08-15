@@ -44,6 +44,7 @@ THING_URL = f"{BASE_URL}/thing"
 LINK_TYPE_CATEGORY = "boardgamecategory"
 LINK_TYPE_MECHANIC = "boardgamemechanic"
 LINK_TYPE_FAMILY = "boardgamefamily"
+RANK_TYPE_SUBDOMAIN = "family"  # es. Abstract/Strategy/Family/Party/Thematic/War Game Rank
 
 REQUEST_TIMEOUT = 15  # secondi
 QUEUE_RETRY_DELAY = 2  # secondi, per il retry su HTTP 202 (richiesta in coda)
@@ -83,7 +84,7 @@ class BggGameInfo:
     giocatori_max: int | None
     durata_minuti: int | None
     peso: float | None  # "weight" BGG: complessita' media, scala 1-5
-    tipo: str | None  # attributo "type" dell'item: boardgame, boardgameexpansion, ...
+    tipo: list[str]  # subdomain BGG: Abstract Game, Strategy Game, Family Game, ...
     categorie: list[str]
     meccaniche: list[str]
     famiglie: list[str]
@@ -186,6 +187,21 @@ def _link_values(item: ET.Element, link_type: str) -> list[str]:
     ]
 
 
+def _subdomain_types(item: ET.Element) -> list[str]:
+    """Estrae il "tipo" BGG (Abstract/Strategy/Family/Party/Thematic/War/...) dai rank."""
+    ranks = item.find("statistics/ratings/ranks")
+    if ranks is None:
+        return []
+    tipi = []
+    for rank in ranks.findall("rank"):
+        if rank.get("type") != RANK_TYPE_SUBDOMAIN:
+            continue
+        friendly = rank.get("friendlyname") or rank.get("name")
+        if friendly:
+            tipi.append(friendly.removesuffix(" Rank").strip())
+    return tipi
+
+
 def get_game_details(bgg_id: str, token: str) -> BggGameInfo:
     """Scarica i dettagli (giocatori, durata, peso, tipo, categorie, meccaniche, famiglie) per un id BGG."""
     root = _request_with_queue_retry(THING_URL, {"id": bgg_id, "stats": 1}, token)
@@ -215,7 +231,7 @@ def get_game_details(bgg_id: str, token: str) -> BggGameInfo:
         giocatori_max=_int_value("maxplayers"),
         durata_minuti=_int_value("playingtime"),
         peso=peso,
-        tipo=item.get("type"),
+        tipo=_subdomain_types(item),
         categorie=_link_values(item, LINK_TYPE_CATEGORY),
         meccaniche=_link_values(item, LINK_TYPE_MECHANIC),
         famiglie=_link_values(item, LINK_TYPE_FAMILY),
@@ -310,7 +326,7 @@ def build_catalog(
             "giocatori_max": None,
             "durata_minuti": None,
             "peso": None,
-            "tipo": None,
+            "tipo": [],
             "categorie": [],
             "meccaniche": [],
             "famiglie": [],
@@ -374,7 +390,7 @@ def _print_game_info(info: BggGameInfo, as_json: bool) -> None:
         print(f"Giocatori: {info.giocatori_min}-{info.giocatori_max}")
         print(f"Durata: {info.durata_minuti} minuti")
         print(f"Peso: {info.peso}")
-        print(f"Tipo: {info.tipo}")
+        print(f"Tipo: {', '.join(info.tipo)}")
         print(f"Categorie: {', '.join(info.categorie)}")
         print(f"Meccaniche: {', '.join(info.meccaniche)}")
         print(f"Famiglie: {', '.join(info.famiglie)}")
