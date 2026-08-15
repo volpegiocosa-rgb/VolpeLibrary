@@ -4,7 +4,7 @@
 Legge `legacy/Registro_giochi.xlsx` (foglio "Tabella", colonne Gioco / Posizione /
 Numero) e per ogni gioco cerca su BGG giocatori minimi, massimi, durata e peso
 (complessita'). Scrive un JSON completo (dati del registro + dati BGG) in
-`legacy/catalogo_bgg.json`.
+`output/catalogo_bgg.json`. La cartella `legacy/` viene solo letta, mai scritta.
 
 Uso:
     export BGG_API_TOKEN="il-tuo-token"
@@ -47,7 +47,7 @@ QUEUE_MAX_RETRIES = 5
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_XLSX_PATH = REPO_ROOT / "legacy" / "Registro_giochi.xlsx"
 DEFAULT_SHEET_NAME = "Tabella"
-DEFAULT_OUTPUT_PATH = REPO_ROOT / "legacy" / "catalogo_bgg.json"
+DEFAULT_OUTPUT_PATH = REPO_ROOT / "output" / "catalogo_bgg.json"
 DEFAULT_REQUEST_DELAY = 2.0  # secondi tra una scheda e l'altra, per rispettare i rate limit BGG
 
 
