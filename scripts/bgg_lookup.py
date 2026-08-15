@@ -29,6 +29,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import random
 import sys
 import time
 import xml.etree.ElementTree as ET
@@ -58,6 +59,11 @@ DEFAULT_XLSX_PATH = REPO_ROOT / "legacy" / "Registro_giochi.xlsx"
 DEFAULT_SHEET_NAME = "Tabella"
 DEFAULT_OUTPUT_PATH = REPO_ROOT / "output" / "catalogo_bgg.json"
 DEFAULT_REQUEST_DELAY = 5.0  # secondi tra una scheda e l'altra, per rispettare i rate limit BGG
+
+
+def _jitter(seconds: float, spread: float) -> float:
+    """Aggiunge un jitter casuale a un delay, per evitare un pattern di richieste troppo regolare."""
+    return seconds + random.uniform(0, spread)
 
 
 class BggError(Exception):
@@ -125,8 +131,9 @@ def _request_with_retry(url: str, params: dict, token: str) -> ET.Element:
                 url, params=params, headers=headers, timeout=REQUEST_TIMEOUT
             )
         except requests.RequestException as exc:
-            print(f"  errore di rete, ritento: {exc}", file=sys.stderr)
-            time.sleep(RATE_LIMIT_INITIAL_DELAY)
+            attesa = _jitter(RATE_LIMIT_INITIAL_DELAY, spread=1.0)
+            print(f"  errore di rete, ritento tra {attesa:.1f}s: {exc}", file=sys.stderr)
+            time.sleep(attesa)
             continue
 
         if response.status_code in (401, 403):
@@ -138,22 +145,23 @@ def _request_with_retry(url: str, params: dict, token: str) -> ET.Element:
 
         if response.status_code == 202:
             # Richiesta accettata ma dati non ancora pronti: ritenta.
+            attesa = _jitter(QUEUE_RETRY_DELAY, spread=1.0)
             print(
-                f"  BGG sta ancora preparando i dati (202), riprovo tra {QUEUE_RETRY_DELAY}s...",
+                f"  BGG sta ancora preparando i dati (202), riprovo tra {attesa:.1f}s...",
                 file=sys.stderr,
             )
-            time.sleep(QUEUE_RETRY_DELAY)
+            time.sleep(attesa)
             continue
 
         if response.status_code == 429:
             retry_after = response.headers.get("Retry-After")
             if retry_after and retry_after.replace(".", "", 1).isdigit():
-                attesa = float(retry_after)
+                attesa = _jitter(float(retry_after), spread=1.0)
             else:
-                attesa = rate_limit_delay
+                attesa = _jitter(rate_limit_delay, spread=rate_limit_delay * 0.5)
                 rate_limit_delay = min(rate_limit_delay * 2, RATE_LIMIT_MAX_DELAY)
             print(
-                f"  RATE LIMIT (429) da BGG: aspetto {attesa:.0f}s e ritento "
+                f"  RATE LIMIT (429) da BGG: aspetto {attesa:.1f}s e ritento "
                 f"(tentativo {attempt + 1}/{MAX_RETRIES})...",
                 file=sys.stderr,
             )
@@ -401,7 +409,7 @@ def build_catalog(
             json.dump(risultati, f, ensure_ascii=False, indent=2)
 
         if i < len(voci):
-            time.sleep(delay)
+            time.sleep(_jitter(delay, spread=delay * 0.5))
 
     ordine = {voce.gioco: i for i, voce in enumerate(voci)}
     risultati.sort(key=lambda r: ordine.get(r["Gioco"], len(voci)))

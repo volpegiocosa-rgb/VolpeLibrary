@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 *:Zone.Identifier
 API_token.md
+legacy/bgg_scraper_brute.py
