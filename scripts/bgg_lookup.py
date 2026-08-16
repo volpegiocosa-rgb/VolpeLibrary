@@ -409,6 +409,15 @@ def build_catalog(
     gia' presenti in output_path e recuperati CON SUCCESSO vengono saltati;
     quelli che in precedenza avevano dato errore (es. rate limit transitorio)
     vengono invece ritentati.
+
+    Il registro xlsx e' considerato la fonte di verita': con --resume (e
+    senza --limit, che darebbe solo una vista parziale) i record il cui
+    Gioco+Posizione non esiste piu' nel registro attuale vengono rimossi dal
+    JSON invece di restare come "fantasmi". Questo copre tre casi: gioco
+    eliminato dal registro (il record sparisce), gioco rinominato o spostato
+    di posizione (il vecchio record sparisce, ne viene creato uno nuovo con i
+    dati aggiornati), gioco aggiunto (nuovo record). I giochi invariati non
+    vengono ri-scaricati da BGG.
     """
     voci = read_registro(xlsx_path, sheet_name)
     if limit is not None:
@@ -425,21 +434,31 @@ def build_catalog(
         with open(output_path, encoding="utf-8") as f:
             precedenti = json.load(f)
         da_ritentare = 0
+        rimossi = 0
         for voce_salvata in precedenti:
+            chiave = (voce_salvata["Gioco"], voce_salvata["Posizione"])
+            # Se il registro e' cambiato (gioco eliminato, rinominato o
+            # spostato di posizione) la chiave salvata non esiste piu' tra le
+            # righe attuali: il record va scartato invece di restare come
+            # "fantasma". Con --limit la vista sul registro e' parziale, quindi
+            # la riconciliazione va saltata per non cancellare dati validi
+            # solo perche' fuori dal sottoinsieme limitato.
+            if limit is None and chiave not in by_key:
+                rimossi += 1
+                continue
             if voce_salvata.get("bgg_errore"):
                 da_ritentare += 1
                 continue
-            chiave = (voce_salvata["Gioco"], voce_salvata["Posizione"])
             # Backfill di "annotazioni" per i record salvati prima che il campo esistesse.
             voce_corrispondente = by_key.get(chiave)
             if voce_corrispondente is not None:
                 voce_salvata.setdefault("annotazioni", voce_corrispondente.annotazioni)
             risultati.append(voce_salvata)
             gia_elaborati.add(chiave)
-        print(
-            f"Ripresa: {len(gia_elaborati)} gia' completati, {da_ritentare} da ritentare.",
-            file=sys.stderr,
-        )
+        messaggio = f"Ripresa: {len(gia_elaborati)} gia' completati, {da_ritentare} da ritentare."
+        if rimossi:
+            messaggio += f" {rimossi} rimossi dal catalogo (non piu' nel registro con lo stesso nome/posizione)."
+        print(messaggio, file=sys.stderr)
 
     for i, voce in enumerate(voci, start=1):
         if (voce.gioco, voce.posizione) in gia_elaborati:
