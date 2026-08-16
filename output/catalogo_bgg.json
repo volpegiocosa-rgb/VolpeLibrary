@@ -28,7 +28,8 @@
       "Islands: Madeira (Portugal)",
       "Theme: Volcanoes"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Hansa Teutonica BIG BOX",
@@ -62,7 +63,8 @@
       "Theme: Hanseatic League",
       "Versions & Editions: Big Box Versions of Individual Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Tokaido",
@@ -105,7 +107,8 @@
       "Theme: Food / Cooking",
       "Theme: Painting / Paintings"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Toscana",
@@ -131,7 +134,8 @@
       "Players: Two-Player Only Games",
       "Region: Tuscany (Italy)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "I coloni di catan",
@@ -186,7 +190,8 @@
       "Series: World's Smallest (Super Impulse)",
       "Theme: Colonial"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Catan das wurfelspiel",
@@ -216,7 +221,8 @@
       "Versions & Editions: Dice Versions of Non-Dice Games",
       "Versions & Editions: Roll- or Flip-and-Write Versions of Non-Writing Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "The Gallerist",
@@ -257,7 +263,8 @@
       "Theme: Fine Art and Art Museums",
       "Theme: Painting / Paintings"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Robinson Crusoe",
@@ -280,21 +287,33 @@
     "famiglie": [
       "Books: Robinson Crusoe"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Mr. President - Updated Kit",
     "Posizione": "Libreria alta 1",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Mr. President - Updated Kit\""
+    "annotazioni": "Updated Kit",
+    "bgg_id": "476",
+    "giocatori_min": 2,
+    "giocatori_max": 4,
+    "durata_minuti": 60,
+    "peso": 2.16,
+    "tipo": [
+      "Strategy Game"
+    ],
+    "categorie": [
+      "Card Game",
+      "Political"
+    ],
+    "meccaniche": [
+      "Hand Management"
+    ],
+    "famiglie": [
+      "Political: Elections",
+      "Series: 3M Bookshelf Series"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Inventions",
@@ -313,11 +332,13 @@
       "Team-Based Game"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "DEI - White Death",
     "Posizione": "Cubo 2",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -354,7 +375,8 @@
       "Game: Frontiers – Liberty or Death!",
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Barrage",
@@ -396,7 +418,8 @@
       "Theme: Dieselpunk",
       "Theme: Electricity Generation"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Banditi di Sherwood",
@@ -424,11 +447,13 @@
       "Crowdfunding: Spieleschmiede",
       "Folk Tales & Fairy Tales: Robin Hood"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Espansione Banditi",
     "Posizione": "Cubo 2",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -443,6 +468,7 @@
   {
     "Gioco": "Spies & Lines",
     "Posizione": "Cubo 2",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -479,7 +505,8 @@
     "famiglie": [
       "Admin: Upcoming Releases"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Navegador",
@@ -515,7 +542,8 @@
       "Series: Rondel (Mac Gerdts)",
       "Theme: Colonial"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Euphoria Essential Edition",
@@ -546,7 +574,8 @@
       "Game: Euphoria",
       "Versions & Editions: Big Box Versions of Individual Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Interstellar",
@@ -577,11 +606,13 @@
       "Components: Map (Interplanetary or Interstellar scale)",
       "Misc: LongPack Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Interstellar Planet set",
     "Posizione": "Libreria alta 2",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -596,6 +627,7 @@
   {
     "Gioco": "Interstellat KS extras",
     "Posizione": "Libreria alta 2",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -653,7 +685,8 @@
       "Animals: Fish / Fishes",
       "Series: The Great Designers (Stronghold Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Air Postal",
@@ -692,7 +725,8 @@
       "Players: Games with expansions that change player count",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Deal with the Devil",
@@ -726,7 +760,8 @@
       "Components: Digital Hybrid – App/Website Required",
       "Theme: Medieval Fantasy"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Sobek",
@@ -756,7 +791,8 @@
       "Digital Implementations: Yucata",
       "Occupation: Merchant"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Pairish",
@@ -782,7 +818,8 @@
       "Admin: Upcoming Releases",
       "Crowdfunding: Kickstarter"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Wandering Towers",
@@ -815,7 +852,8 @@
       "Theme: Witches",
       "Theme: Wizards"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Vienna",
@@ -843,7 +881,8 @@
       "Country: Austria",
       "Country: Austria-Hungary"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Lorenzo il Magnifico",
@@ -880,7 +919,8 @@
       "Game: Lorenzo il Magnifico",
       "Mechanism: Tableau Building"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Port Arthur",
@@ -906,21 +946,35 @@
       "Players: Two-Player Only Games",
       "Theme: Siege"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Don Quizote",
     "Posizione": "Libreria alta 2",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Don Quizote\""
+    "annotazioni": null,
+    "bgg_id": "65990",
+    "giocatori_min": 1,
+    "giocatori_max": 4,
+    "durata_minuti": 20,
+    "peso": 1.63,
+    "tipo": [
+      "Family Game"
+    ],
+    "categorie": [
+      "Medieval",
+      "Novel-based"
+    ],
+    "meccaniche": [
+      "Bingo",
+      "Hand Management",
+      "Tile Placement"
+    ],
+    "famiglie": [
+      "Books: Don Quixote",
+      "Players: Games with Solitaire Rules"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Usolli",
@@ -949,7 +1003,8 @@
       "Crowdfunding: Kickstarter",
       "Religious: Islam"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Giovanna D’Arco",
@@ -983,7 +1038,8 @@
       "Historical Figures: Joan of Arc",
       "History: Hundred Years Wars"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Istanbul BIG BOX",
@@ -1020,21 +1076,37 @@
       "Series: Istanbul (Pegasus Spiele)",
       "Versions & Editions: Big Box Versions of Individual Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Finis terrae (le tesserine sono sopra)",
     "Posizione": "Cubo 3",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
+    "annotazioni": "le tesserine sono sopra",
+    "bgg_id": "389780",
+    "giocatori_min": 2,
+    "giocatori_max": 4,
+    "durata_minuti": 85,
+    "peso": 2.6,
     "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
+    "categorie": [
+      "Adventure",
+      "Dice",
+      "Exploration",
+      "Nautical",
+      "Pirates"
+    ],
+    "meccaniche": [
+      "Map Addition",
+      "Pick-up and Deliver",
+      "Pieces as Map",
+      "Push Your Luck",
+      "Tile Placement",
+      "Trading",
+      "Worker Placement"
+    ],
     "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Finis terrae (le tesserine sono sopra)\""
+    "bgg_errore": null
   },
   {
     "Gioco": "Calico",
@@ -1075,7 +1147,8 @@
       "Series: Calico",
       "Theme: Sewing / Knitting / Cloth-Making"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Medioevo",
@@ -1107,25 +1180,39 @@
       "Occupation: Builder",
       "Theme: Construction"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Kites “il tempo vola”",
     "Posizione": "Cubo 3",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Kites “il tempo vola”\""
+    "annotazioni": "il tempo vola",
+    "bgg_id": "348096",
+    "giocatori_min": 2,
+    "giocatori_max": 6,
+    "durata_minuti": 10,
+    "peso": 1.07,
+    "tipo": [
+      "Party Game",
+      "Family Game"
+    ],
+    "categorie": [
+      "Card Game",
+      "Real-time"
+    ],
+    "meccaniche": [
+      "Cooperative Game"
+    ],
+    "famiglie": [
+      "Components: Sand Timers",
+      "Theme: Kites"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Fabbrica di Cioccolato",
     "Posizione": "Libreria alta 3",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -1170,7 +1257,8 @@
       "Series: Medieval Trilogies (Garphill Games)",
       "Series: The North Sea Trilogy (Garphill Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Terminus",
@@ -1195,7 +1283,8 @@
     "famiglie": [
       "Series: Monopoly-Like"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Planta Nubo",
@@ -1227,7 +1316,8 @@
       "Theme: Solarpunk",
       "Theme: Trees and Forests"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Sabika",
@@ -1255,7 +1345,8 @@
       "Region: Andalusia (Spain)",
       "Region: Mediterranean Sea"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Shinjuku",
@@ -1286,7 +1377,8 @@
       "Digital Implementations: Screentop.gg",
       "Digital Implementations: Tabletopia"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Kraftwagen",
@@ -1316,7 +1408,8 @@
       "Series: The Great Designers (Stronghold Games)",
       "Theme: Automotive Industry"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Asian Tigers",
@@ -1345,7 +1438,8 @@
       "History: Industrial Revolution",
       "Region: Hong Kong"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Moon Colony Bloodbath",
@@ -1377,7 +1471,8 @@
       "Theme: Robots",
       "Theme: Survival"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Red Outpost",
@@ -1407,7 +1502,8 @@
       "Space: Colonization / Extraterrestrial Colonisation",
       "Theme: Alternate History"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Fino a prova contraria - Sete di giustizia",
@@ -1432,7 +1528,8 @@
       "Misc: LongPack Games",
       "Theme: Attorneys / Courts"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Fino a prova contraria - La collana del cielo stellato",
@@ -1456,7 +1553,8 @@
       "Misc: LongPack Games",
       "Theme: Attorneys / Courts"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Jaipur",
@@ -1501,7 +1599,8 @@
       "Theme: Deserts",
       "Theme: Jewels"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Ace High",
@@ -1533,11 +1632,13 @@
       "Country: Germany",
       "Mechanism: Campaign Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Parolandia frasi per gioco",
     "Posizione": "Cubo 4",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -1582,7 +1683,8 @@
       "Game: Above and Below",
       "Setting: World of Arzium"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Codice fantasma",
@@ -1610,21 +1712,50 @@
     "famiglie": [
       "Crowdfunding: Kickstarter"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Tranvias (Tramways)",
     "Posizione": "Cubo 4",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Tranvias (Tramways)\""
+    "annotazioni": "Tramways",
+    "bgg_id": "166571",
+    "giocatori_min": 1,
+    "giocatori_max": 5,
+    "durata_minuti": 120,
+    "peso": 3.81,
+    "tipo": [
+      "Strategy Game"
+    ],
+    "categorie": [
+      "City Building",
+      "Trains",
+      "Transportation"
+    ],
+    "meccaniche": [
+      "Auction / Bidding",
+      "Deck, Bag, and Pool Building",
+      "End Game Bonuses",
+      "Hand Management",
+      "Income",
+      "Modular Board",
+      "Multi-Use Cards",
+      "Network and Route Building",
+      "Ownership",
+      "Pick-up and Deliver",
+      "Square Grid",
+      "Tile Placement",
+      "Turn Order: Auction",
+      "Variable Set-up",
+      "Zone of Control"
+    ],
+    "famiglie": [
+      "Components: Multi-Use Cards",
+      "Digital Implementations: Tabletopia",
+      "Game: Tramways",
+      "Players: Games with Solitaire Rules"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Mini Express",
@@ -1656,7 +1787,8 @@
       "Series: Cube Rails",
       "Theme: Trains"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Semenza",
@@ -1695,7 +1827,8 @@
       "Series: Beveled Boxes (Gigamic)",
       "Theme: Flowers"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "HERO",
@@ -1714,7 +1847,8 @@
       "Rock-Paper-Scissors"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Karak II",
@@ -1746,7 +1880,8 @@
       "Series: Karak",
       "Versions & Editions: Sequels"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "War of Whispers",
@@ -1775,7 +1910,8 @@
       "Game: Doomtown – Reloaded",
       "Setting: The Weird West (Pinnacle Entertainment)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Windmill Valley",
@@ -1808,7 +1944,8 @@
       "Misc: LongPack Games",
       "Theme: Flowers"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "The Specialist",
@@ -1837,7 +1974,8 @@
       "Misc: LongPack Games",
       "Theme: Factories"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Intarsia",
@@ -1860,7 +1998,8 @@
       "Tile Placement"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Men Nefer",
@@ -1888,7 +2027,8 @@
       "Ancient: Egypt",
       "Misc: LongPack Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "This War of Mine",
@@ -1924,7 +2064,8 @@
       "Promotional: Man vs Meeple, Season 2",
       "Theme: Boardgaming"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Union Stockyards",
@@ -1961,7 +2102,8 @@
       "History: Industrial Revolution",
       "Misc: LongPack Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "7 Empires",
@@ -1996,11 +2138,13 @@
       "Variable Set-up"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Hyspania",
     "Posizione": "Libreria alta 4",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -2049,7 +2193,8 @@
       "Versions & Editions: Dice Versions of Non-Dice Games",
       "Versions & Editions: Roll- or Flip-and-Write Versions of Non-Writing Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Shamans",
@@ -2081,7 +2226,8 @@
       "Theme: Druids",
       "Theme: Native Americans / First Peoples"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Lama",
@@ -2114,7 +2260,8 @@
       "Misc: LongPack Games",
       "Series: Beveled Boxes (Gigamic)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Play Ball",
@@ -2137,7 +2284,8 @@
     "famiglie": [
       "Sports: Baseball"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Crops",
@@ -2165,7 +2313,8 @@
       "Mechanism: Tableau Building",
       "Theme: Nature"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Bot Hunters",
@@ -2187,7 +2336,8 @@
     "famiglie": [
       "Crowdfunding: Kickstarter"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Plutocracy",
@@ -2210,7 +2360,8 @@
       "Trading"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Bomb Squad",
@@ -2229,7 +2380,8 @@
       "Memory"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "WarZag",
@@ -2259,7 +2411,8 @@
       "Zone of Control"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Dual Powers",
@@ -2297,7 +2450,8 @@
       "Misc: LongPack Games",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Celestia",
@@ -2317,7 +2471,8 @@
       "Team-Based Game"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Cascadia (e Landmarks)",
@@ -2341,7 +2496,8 @@
       "Promotional: Cards",
       "Series: Cascadia"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "e Landmarks"
   },
   {
     "Gioco": "Tao",
@@ -2364,7 +2520,8 @@
       "Pattern Recognition"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Flip 7",
@@ -2398,11 +2555,13 @@
       "Holidays: Christmas",
       "Misc: External Score Sheet Required"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Flip 7 - Vendetta",
     "Posizione": "Libreria alta 5",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -2440,7 +2599,8 @@
     "famiglie": [
       "Theme: Hot Air Balloons"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Black Friday",
@@ -2468,7 +2628,8 @@
       "Series: Freitag-Project (Friedemann Friese)",
       "Theme: Stock Market"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "23 Pugnalate",
@@ -2498,7 +2659,8 @@
       "Ancient: Rome",
       "Crowdfunding: Kickstarter"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Dune",
@@ -2542,7 +2704,8 @@
       "Misc: Dice Tower Hall of Fame",
       "Theme: Deserts"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "The Rich and The Good",
@@ -2571,7 +2734,8 @@
       "Theme: Colonial",
       "Theme: Stock Market"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Euphoria",
@@ -2593,7 +2757,8 @@
     "famiglie": [
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Kanban Automotive Revolution",
@@ -2625,7 +2790,8 @@
       "Series: The Great Designers (Stronghold Games)",
       "Theme: Automotive Industry"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Sierra West",
@@ -2663,7 +2829,8 @@
       "Misc: LongPack Games",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Inferno",
@@ -2691,7 +2858,8 @@
       "Theme: Hell",
       "Theme: Villainy"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "New Cold War",
@@ -2722,7 +2890,8 @@
       "History: Cold War",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Task Team",
@@ -2744,7 +2913,8 @@
       "Series: Défifoo",
       "Series: Party Time (Tranjis Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Dragon in the Hut",
@@ -2766,7 +2936,8 @@
       "Crowdfunding: Kickstarter",
       "Digital Implementations: Tabletopia"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Lodge",
@@ -2793,7 +2964,8 @@
       "Theme: Nature",
       "Theme: Restaurant/Café"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Frutticola",
@@ -2816,7 +2988,8 @@
       "Digital Implementations: Tabletopia",
       "Food & Drink: Fruit"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Lewis & Clark",
@@ -2845,21 +3018,36 @@
       "Series: Cartaventura (BLAM !)",
       "Versions & Editions: Demo Versions"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Sparta (cellophane)",
     "Posizione": "Cubo 6",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Sparta (cellophane)\""
+    "annotazioni": "cellophane",
+    "bgg_id": "109105",
+    "giocatori_min": 2,
+    "giocatori_max": 2,
+    "durata_minuti": 30,
+    "peso": 1.6,
+    "tipo": [
+      "Abstract Game"
+    ],
+    "categorie": [
+      "Abstract Strategy",
+      "Ancient"
+    ],
+    "meccaniche": [
+      "Grid Movement"
+    ],
+    "famiglie": [
+      "Ancient: Greece",
+      "Ancient: Sparta",
+      "Components: 10 x 10 Grids",
+      "Players: Two-Player Only Games",
+      "Series: Yellow Wave Box (Queen)"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Omerta",
@@ -2886,11 +3074,13 @@
       "Misc: Lowest Score Wins",
       "Traditional Card Games: Golf"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Omerta miniatures",
     "Posizione": "Libreria alta 6",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -2931,11 +3121,13 @@
       "Series: L.BOARD (Playte)",
       "Theme: City"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Polinesia",
     "Posizione": "Cubo 7",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -2974,7 +3166,8 @@
       "History: Age of Discovery",
       "Theme: Colonial"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "il nuovo mondo"
   },
   {
     "Gioco": "Century “la via delle spezie”",
@@ -3009,7 +3202,8 @@
       "Game: Century (Plan B Games)",
       "Theme: Silk Road"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "la via delle spezie"
   },
   {
     "Gioco": "Century “meraviglie orientali”",
@@ -3038,7 +3232,8 @@
       "Game: Century (Plan B Games)",
       "Region: Oceania"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "meraviglie orientali"
   },
   {
     "Gioco": "Stromboli",
@@ -3065,7 +3260,8 @@
       "Theme: Seashells",
       "Theme: Volcanoes"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "La belle epoque",
@@ -3114,7 +3310,8 @@
       "Players: Wargames with Solitaire Rules",
       "Theme: Colonial"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Kluster",
@@ -3141,7 +3338,8 @@
       "Misc: LongPack Games",
       "Series: Kluster"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Vantage",
@@ -3161,7 +3359,8 @@
       "Set Collection"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Downforce",
@@ -3194,7 +3393,8 @@
       "Sports: Auto Racing",
       "Sports: Formula 1"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Can't Stop",
@@ -3229,21 +3429,53 @@
       "Series: L.BOARD (Playte)",
       "Sports: Mountain Climbing"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Alta Tensione - gioco di carte",
     "Posizione": "Libreria alta 7",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Alta Tensione - gioco di carte\""
+    "annotazioni": "gioco di carte",
+    "bgg_id": "2651",
+    "giocatori_min": 2,
+    "giocatori_max": 6,
+    "durata_minuti": 120,
+    "peso": 3.25,
+    "tipo": [
+      "Strategy Game"
+    ],
+    "categorie": [
+      "Economic",
+      "Industry / Manufacturing"
+    ],
+    "meccaniche": [
+      "Auction / Bidding",
+      "Auction: Turn Order Until Pass",
+      "Catch the Leader",
+      "Income",
+      "Market",
+      "Network and Route Building",
+      "Turn Order: Stat-Based",
+      "Variable Set-up"
+    ],
+    "famiglie": [
+      "Components: Map (Continental / National scale)",
+      "Components: Wooden pieces & boards",
+      "Country: Germany",
+      "Country: USA",
+      "Decades: The 2000's",
+      "Digital Implementations: Apple App Store",
+      "Digital Implementations: BrettspielWelt",
+      "Digital Implementations: Google Play",
+      "Digital Implementations: Steam",
+      "Game: Power Grid",
+      "Mechanism: Tableau Building",
+      "Misc: BGG Hall of Fame",
+      "Misc: Dice Tower Hall of Fame",
+      "Occupation: Engineer",
+      "Theme: Electricity Generation"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Global Warning",
@@ -3264,7 +3496,8 @@
       "Semi-Cooperative Game"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Water game",
@@ -3300,7 +3533,8 @@
       "Players: Wargames with Solitaire Rules",
       "Series: Historic Epic Battle System (Hall or Nothing Productions)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Flamme rouge",
@@ -3336,7 +3570,8 @@
       "Sports: Bicycling / Cycling",
       "Theme: Retro"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Operazione Vienna",
@@ -3373,7 +3608,8 @@
       "Misc: LongPack Games",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Takenoko",
@@ -3424,7 +3660,8 @@
       "Theme: Trees and Forests",
       "Theme: Weather"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Takenoko chibis",
@@ -3460,7 +3697,8 @@
       "Theme: Chibis",
       "Theme: Nature"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Southern Pacific",
@@ -3488,7 +3726,8 @@
       "Series: Winsome Essen Sets",
       "Series: Winsome Train Games (Rio Grande Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "QE",
@@ -3515,7 +3754,8 @@
     "famiglie": [
       "Crowdfunding: Kickstarter"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Terraforming Mars",
@@ -3571,21 +3811,56 @@
       "Space: Mars",
       "Theme: Science"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Terraforming Mars Ares expeditions",
     "Posizione": "Cubo 9",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Terraforming Mars Ares expeditions\""
+    "annotazioni": null,
+    "bgg_id": "328871",
+    "giocatori_min": 1,
+    "giocatori_max": 4,
+    "durata_minuti": 60,
+    "peso": 2.93,
+    "tipo": [
+      "Strategy Game"
+    ],
+    "categorie": [
+      "Card Game",
+      "Science Fiction",
+      "Space Exploration"
+    ],
+    "meccaniche": [
+      "End Game Bonuses",
+      "Follow",
+      "Hand Management",
+      "Income",
+      "Market",
+      "Multi-Use Cards",
+      "Set Collection",
+      "Simultaneous Action Selection",
+      "Solo / Solitaire Game",
+      "Tags",
+      "Tech Trees / Tech Tracks",
+      "Track Movement",
+      "Variable Phase Order",
+      "Variable Player Powers",
+      "Variable Set-up"
+    ],
+    "famiglie": [
+      "Crowdfunding: Kickstarter",
+      "Game: Terraforming Mars Ares Expedition",
+      "Mechanism: Tableau Building",
+      "Misc: DIZED Tutorial",
+      "Misc: Watch It Played How To Videos",
+      "Series: Terraforming Mars",
+      "Setting: Future Timeline (Fryxgames)",
+      "Space: Mars",
+      "Theme: Science",
+      "Versions & Editions: Card Versions of Non-Card Games"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Terraforming Mars Prelude",
@@ -3621,7 +3896,8 @@
       "Space: Mars",
       "Space: Venus"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Terraforming Mars Colonies",
@@ -3659,7 +3935,8 @@
       "Space: Colonization / Extraterrestrial Colonisation",
       "Space: Jupiter"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Terraforming Mars Hellas & Elysium",
@@ -3695,7 +3972,8 @@
       "Space: Earth's Solar System",
       "Space: Mars"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Rocketmen",
@@ -3732,21 +4010,46 @@
       "Space: Earth's Solar System",
       "Space: Mars"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Rocketmen (Deluxe miniature set)",
     "Posizione": "Cubo 9",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Rocketmen (Deluxe miniature set)\""
+    "annotazioni": "Deluxe miniature set",
+    "bgg_id": "283387",
+    "giocatori_min": 1,
+    "giocatori_max": 4,
+    "durata_minuti": 90,
+    "peso": 2.51,
+    "tipo": [
+      "Strategy Game"
+    ],
+    "categorie": [
+      "Economic",
+      "Science Fiction",
+      "Space Exploration"
+    ],
+    "meccaniche": [
+      "Deck, Bag, and Pool Building",
+      "Hand Management",
+      "Hidden Roles",
+      "Open Drafting",
+      "Push Your Luck",
+      "Race",
+      "Solo / Solitaire Game"
+    ],
+    "famiglie": [
+      "Crowdfunding: Kickstarter",
+      "Digital Implementations: Tabletopia",
+      "Misc: LongPack Games",
+      "Occupation: Astronaut",
+      "Players: Games with Solitaire Rules",
+      "Space: Earth's Moon",
+      "Space: Earth's Solar System",
+      "Space: Mars"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Prospect detective caso -0090-",
@@ -3769,21 +4072,65 @@
       "Components: Digital Hybrid – App/Website Required",
       "Series: Prospect Detective (Unalfabeta)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Hight Frontier 4 all",
     "Posizione": "Cubo 10",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Hight Frontier 4 all\""
+    "annotazioni": null,
+    "bgg_id": "281655",
+    "giocatori_min": 1,
+    "giocatori_max": 5,
+    "durata_minuti": 240,
+    "peso": 4.82,
+    "tipo": [
+      "Thematic",
+      "Strategy Game"
+    ],
+    "categorie": [
+      "Civilization",
+      "Economic",
+      "Exploration",
+      "Industry / Manufacturing",
+      "Science Fiction",
+      "Space Exploration"
+    ],
+    "meccaniche": [
+      "Auction / Bidding",
+      "Deck, Bag, and Pool Building",
+      "Hand Management",
+      "Negotiation",
+      "Network and Route Building",
+      "Pick-up and Deliver",
+      "Point to Point Movement",
+      "Resource to Move",
+      "Simulation",
+      "Variable Player Powers"
+    ],
+    "famiglie": [
+      "Components: Map (Interplanetary or Interstellar scale)",
+      "Crowdfunding: Kickstarter",
+      "Digital Implementations: TableTop Simulator Mod (TTS)",
+      "Game: High Frontier",
+      "Misc: LongPack Games",
+      "Occupation: Astronaut",
+      "Space: Asteroids",
+      "Space: Comets",
+      "Space: Earth's Moon",
+      "Space: Earth's Solar System",
+      "Space: Jupiter",
+      "Space: Mars",
+      "Space: Mercury",
+      "Space: Neptune",
+      "Space: Pluto",
+      "Space: Saturn",
+      "Space: Uranus",
+      "Space: Venus",
+      "Theme: Astronomy",
+      "Theme: Science"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Dune imperium",
@@ -3832,7 +4179,8 @@
       "Misc: Watch It Played How To Videos",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "One small step",
@@ -3864,7 +4212,8 @@
       "History: Cold War",
       "Space: Earth's Moon"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "The search for Planet X",
@@ -3903,7 +4252,8 @@
       "Theme: Astronomy",
       "Theme: Science"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Epic galaxies",
@@ -3947,7 +4297,8 @@
       "Series: Tiny Epic (Gamelyn Games/Tycoon Games)",
       "Series: Winzige Welten (Schwerkraft-Verlag)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Universal rule",
@@ -3979,7 +4330,8 @@
       "Series: Wallet & Box Micro Games (Button Shy)",
       "Setting: Pocket Universe (Button Shy)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Havana",
@@ -4009,7 +4361,8 @@
       "Country: Cuba",
       "Series: Cuba (Eggertspiele)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "The Red cathedral",
@@ -4049,11 +4402,13 @@
       "Series: Small Box Euros (Devir)",
       "Theme: Construction"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Scope stalingard",
     "Posizione": "Cubo 11",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -4094,7 +4449,8 @@
       "Series: SCOPE Games (Draco Ideas)",
       "Theme: Submarines"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Scope Panzer",
@@ -4127,7 +4483,8 @@
       "Players: Wargames with Rules Supporting Only Two Players",
       "Series: SCOPE Games (Draco Ideas)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Salton sea",
@@ -4161,7 +4518,8 @@
       "Theme: Climate Change",
       "Theme: Environmental Protection / Degradation / Pollution"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "1906 San Francisco",
@@ -4187,7 +4545,8 @@
       "Series: 1900 (Looping Games)",
       "Theme: Earthquakes"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "1923 Cotton Club",
@@ -4220,7 +4579,8 @@
       "Series: 1900 (Looping Games)",
       "Theme: African Americans"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "1998 ISS",
@@ -4249,7 +4609,8 @@
       "Players: Games with Solitaire Rules",
       "Series: 1900 (Looping Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Lama",
@@ -4282,7 +4643,8 @@
       "Misc: LongPack Games",
       "Series: Beveled Boxes (Gigamic)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "A Peaceful Garden",
@@ -4304,7 +4666,8 @@
       "Animals: Butterflies",
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Audience",
@@ -4330,7 +4693,8 @@
       "Admin: Upcoming Releases",
       "Theme: Radio Broadcasting"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Bag & Snatch",
@@ -4357,7 +4721,8 @@
     "famiglie": [
       "Admin: Upcoming Releases"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "First Giants",
@@ -4387,7 +4752,8 @@
       "Theme: Archaeology / Paleontology",
       "Theme: Fine Art and Art Museums"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Viticulture World",
@@ -4424,7 +4790,8 @@
       "Players: Expansions Adding Cooperative Play",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Viticulture",
@@ -4457,7 +4824,8 @@
       "Food & Drink: Wine",
       "Game: Viticulture"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Dom Pierre",
@@ -4485,7 +4853,8 @@
       "Food & Drink: Wine",
       "Religious: Monks/Abbots & Monasteries/Abbeys"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Beer & bread",
@@ -4524,7 +4893,8 @@
       "Players: Two-Player Only Games",
       "Theme: Food / Cooking"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Last message",
@@ -4555,7 +4925,8 @@
       "Theme: Superheroes",
       "Theme: UFOs"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Tuscany",
@@ -4590,7 +4961,8 @@
       "Region: Tuscany (Italy)",
       "Series: Alea Revised Big Box"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Cafe",
@@ -4610,7 +4982,8 @@
     "famiglie": [
       "Series: KOSMOS Open&Play"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "N - The Napoleonic Wars",
@@ -4635,7 +5008,8 @@
     "famiglie": [
       "Series: THW Roleplaying"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Global War",
@@ -4667,7 +5041,8 @@
       "Game: Catan",
       "Theme: Climate Change"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Earthborne Rangers",
@@ -4711,7 +5086,8 @@
       "Theme: Environmental Protection / Degradation / Pollution",
       "Theme: Solarpunk"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Altay",
@@ -4745,7 +5121,8 @@
       "Misc: LongPack Games",
       "Theme: Mountains"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Ponzi scheme",
@@ -4767,7 +5144,8 @@
       "Trading"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Tea Garden",
@@ -4795,21 +5173,48 @@
       "Food & Drink: Tea",
       "Players: Games with expansions that add solo play"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Knititng Circle",
     "Posizione": "Cubo 14",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Knititng Circle\""
+    "annotazioni": null,
+    "bgg_id": "421606",
+    "giocatori_min": 1,
+    "giocatori_max": 4,
+    "durata_minuti": 45,
+    "peso": 2.09,
+    "tipo": [
+      "Family Game"
+    ],
+    "categorie": [
+      "Abstract Strategy",
+      "Animals",
+      "Puzzle"
+    ],
+    "meccaniche": [
+      "Chaining",
+      "Contracts",
+      "End Game Bonuses",
+      "Market",
+      "Matching",
+      "Open Drafting",
+      "Pattern Building",
+      "Rondel",
+      "Scenario / Mission / Campaign Game",
+      "Set Collection",
+      "Solo / Solitaire Game",
+      "Tile Placement",
+      "Variable Set-up"
+    ],
+    "famiglie": [
+      "Crowdfunding: Kickstarter",
+      "Digital Implementations: Tabletopia",
+      "Series: Calico",
+      "Theme: Sewing / Knitting / Cloth-Making"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Mr. Jack",
@@ -4843,7 +5248,8 @@
       "Players: Two-Player Only Games",
       "Theme: Mystery / Crime"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Forbidden city",
@@ -4867,7 +5273,8 @@
       "Construction: Forbidden City (China)",
       "Country: China"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Furnace",
@@ -4907,7 +5314,8 @@
       "Mechanism: Tableau Building",
       "Series: Furnace"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Cavernicoli",
@@ -4936,7 +5344,8 @@
       "Components: Polyominoes",
       "Digital Implementations: Game Park"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Wild space",
@@ -4968,7 +5377,8 @@
       "Players: Games with Solitaire Rules",
       "Theme: Anthropomorphic Animals"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Boomtown",
@@ -4995,11 +5405,13 @@
     "famiglie": [
       "Country: USA"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Pouf party",
     "Posizione": "Cubo 14",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -5044,7 +5456,8 @@
       "Misc: Watch It Played How To Videos",
       "Players: One versus Many"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Shinkansen zero-kei",
@@ -5069,7 +5482,8 @@
     "famiglie": [
       "Country: Japan"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Back to the future back in time",
@@ -5100,7 +5514,8 @@
       "Theme: Mad Science / Mad Scientist",
       "Theme: Time Travel"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Shining",
@@ -5130,7 +5545,8 @@
       "Movies: Horror Movies",
       "Theme: Hotels, Inns, Lodgings"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Finca",
@@ -5164,7 +5580,8 @@
       "Islands: Mallorca (Spain)",
       "Occupation: Farmer"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "No pasaran!",
@@ -5194,7 +5611,8 @@
       "History: Spanish Civil War",
       "Magazine: Vae Victis"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Piccioni",
@@ -5222,7 +5640,8 @@
       "Animals: Pigeons",
       "Digital Implementations: Tabletopia"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Ding",
@@ -5241,7 +5660,8 @@
       "Set Collection"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Defcon",
@@ -5271,7 +5691,8 @@
       "Theme: Alternate History",
       "Theme: Nuclear Option"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Marrakech",
@@ -5305,7 +5726,8 @@
       "Theme: Sewing / Knitting / Cloth-Making",
       "Versions & Editions: Bigger Versions of Regular-Size Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Kings 2",
@@ -5327,7 +5749,8 @@
       "Contests: 18 Card Microgame",
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Roll & camera!",
@@ -5348,7 +5771,8 @@
     "famiglie": [
       "Theme: Photography"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Overbooked",
@@ -5377,7 +5801,8 @@
       "Misc: LongPack Games",
       "Mythology: Chinese"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Alta Società",
@@ -5405,7 +5830,8 @@
       "Series: Small Box Big Game (Allplay)",
       "Theme: Art style – Art Nouveau"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Machi Koro",
@@ -5438,21 +5864,36 @@
       "Misc: Watch It Played How To Videos",
       "Theme: City"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Le barricate -Parma1922-",
     "Posizione": "Cubo 16",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Le barricate -Parma1922-\""
+    "annotazioni": "Parma 1922",
+    "bgg_id": "378055",
+    "giocatori_min": 2,
+    "giocatori_max": 8,
+    "durata_minuti": 60,
+    "peso": 2.0,
+    "tipo": [
+      "War Game"
+    ],
+    "categorie": [
+      "Civil War",
+      "Wargame"
+    ],
+    "meccaniche": [
+      "Action Points",
+      "Dice Rolling",
+      "Events",
+      "Hidden Roles"
+    ],
+    "famiglie": [
+      "Admin: Better Description Needed!",
+      "Cities: Parma (Italy)"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "2 minutes to Midnight",
@@ -5496,11 +5937,13 @@
       "Players: Wargames with Solitaire Rules",
       "Theme: Retro"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Command the fate of an empire",
     "Posizione": "Cubo 17",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -5515,16 +5958,31 @@
   {
     "Gioco": "Virtù “l'arte del governo”",
     "Posizione": "Cubo 17",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Virtù “l'arte del governo”\""
+    "annotazioni": "l'arte del governo",
+    "bgg_id": "345377",
+    "giocatori_min": 2,
+    "giocatori_max": 5,
+    "durata_minuti": 150,
+    "peso": 3.99,
+    "tipo": [
+      "Strategy Game"
+    ],
+    "categorie": [
+      "Renaissance"
+    ],
+    "meccaniche": [
+      "Action Retrieval",
+      "Area Majority / Influence",
+      "End Game Bonuses",
+      "Open Drafting",
+      "Point to Point Movement",
+      "Rondel"
+    ],
+    "famiglie": [
+      "Country: Italy",
+      "History: Italian City-States"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "First Martians “avventure sul pianeta rosso”",
@@ -5563,7 +6021,8 @@
       "Space: Mars",
       "Theme: Survival"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "avventure sul pianeta rosso"
   },
   {
     "Gioco": "Code",
@@ -5581,7 +6040,8 @@
       "Hand Management"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Basket flip",
@@ -5598,7 +6058,8 @@
       "Crowdfunding: Kickstarter",
       "Food & Drink: Fruit"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Eleven",
@@ -5620,7 +6081,8 @@
     "famiglie": [
       "Card Games: Shedding / Stops"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Eleven campagna in solitario",
@@ -5646,7 +6108,8 @@
       "Players: Expansions Adding Solo Play",
       "Sports: Football / Soccer"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Viandanti a sud del Tigri",
@@ -5689,7 +6152,8 @@
       "Series: The South Tigris Trilogy (Garphill Games)",
       "Theme: Astronomy"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Studiosi a sud del Tigri",
@@ -5725,7 +6189,8 @@
       "Series: Medieval Trilogies (Garphill Games)",
       "Series: The South Tigris Trilogy (Garphill Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Indonesia",
@@ -5767,11 +6232,13 @@
       "Digital Implementations: SlothNinja",
       "Digital Implementations: TableTop Simulator Mod (TTS)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Monopoli carte",
     "Posizione": "Cubo 18",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -5804,7 +6271,8 @@
     "famiglie": [
       "Category: DIZED Tutorial"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Kingdom Legacy",
@@ -5838,7 +6306,8 @@
       "Components: AI Generated Illustrations",
       "Mechanism: Legacy"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "China",
@@ -5869,7 +6338,8 @@
       "Players: Games with expansions that change player count",
       "Series: Web of Power / China"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Provincia romana",
@@ -5893,7 +6363,8 @@
     "famiglie": [
       "Ancient: Rome"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Golden horn",
@@ -5918,7 +6389,8 @@
       "Cities: Venice (Veneto, Italy)",
       "Occupation: Merchant"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Suna Valo",
@@ -5948,7 +6420,8 @@
       "Players: Two-Player Only Games",
       "Theme: Solarpunk"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Coney",
@@ -5981,7 +6454,8 @@
       "Mechanism: Tableau Building",
       "Theme: Nature"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Saboteur",
@@ -6021,7 +6495,8 @@
       "Series: Beveled Boxes (Gigamic)",
       "Theme: Mining"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Popcorn",
@@ -6044,11 +6519,13 @@
     "famiglie": [
       "Components: Marbles"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Compagnia delle Indie",
     "Posizione": "Cubo 20",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -6089,7 +6566,8 @@
       "Misc: Lowest Score Wins",
       "Series: Beveled Boxes (Gigamic)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Darwin’s journey",
@@ -6131,7 +6609,8 @@
       "Theme: Evolution",
       "Theme: Science"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Saboteur il duello",
@@ -6163,7 +6642,8 @@
       "Theme: Mining",
       "Versions & Editions: Two-Player Versions of More-Player Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Encyclopedia",
@@ -6188,7 +6668,8 @@
     "famiglie": [
       "Crowdfunding: Kickstarter"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Teotihuacan",
@@ -6218,11 +6699,13 @@
       "Game: Dice Settlers",
       "Mechanism: 4X"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Mai Dire Pirla",
     "Posizione": "Cubo 20",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -6254,7 +6737,8 @@
     "famiglie": [
       "Occupation: Merchant"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Traditori a bordo",
@@ -6287,7 +6771,8 @@
       "Digital Implementations: TableTop Simulator Mod (TTS)",
       "Theme: Pirates"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Il gioco del contrabbandiere",
@@ -6312,7 +6797,8 @@
       "Players: Two-Player Only Games",
       "Theme: Police"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Strada romana",
@@ -6341,7 +6827,8 @@
       "Cities: Rome (Lazio, Italy)",
       "Components: Map (City Scale)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Consiglio dei 4",
@@ -6365,7 +6852,8 @@
     "famiglie": [
       "Components: Miniatures"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Magna Roma",
@@ -6400,11 +6888,13 @@
       "Crowdfunding: Modian",
       "Digital Implementations: Tabletopia"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Meridiana",
     "Posizione": "Cubo 21",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -6444,11 +6934,13 @@
       "Theme: Gardening",
       "Theme: Nature"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Gatta ci cova",
     "Posizione": "Cubo 21",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -6488,7 +6980,8 @@
       "Game: Coloretto",
       "Players: Games with expansions that change player count"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Two Rooms",
@@ -6514,7 +7007,8 @@
       "Creatures: Vampires",
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Nemesis",
@@ -6543,7 +7037,8 @@
       "Players: Two-Player Only Games",
       "Series: Nemesis (Nexus Editrice / Oberon Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Nemesis void seeders",
@@ -6574,11 +7069,13 @@
       "Game: Nemesis",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Nemesis carnomorph expansion",
     "Posizione": "Cubo 22",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -6588,7 +7085,7 @@
     "categorie": [],
     "meccaniche": [],
     "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Nemesis carnomorph expansion\""
+    "bgg_errore": "Nessun gioco trovato su BGG per \"Nemesis: Carnomorphs Expansion\""
   },
   {
     "Gioco": "Hostage negotiator",
@@ -6620,11 +7117,13 @@
       "Players: Games with Solitaire Rules",
       "Players: Solitaire Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Il Mondo senza fine",
     "Posizione": "Cubo 23",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -6672,7 +7171,8 @@
       "Mountains: Andes",
       "Occupation: Farmer"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Boss Monster",
@@ -6704,21 +7204,45 @@
       "Game: Boss Monster",
       "Theme: Villainy"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Paxpamir",
     "Posizione": "Cubo 23",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Paxpamir\""
+    "annotazioni": null,
+    "bgg_id": "155255",
+    "giocatori_min": 2,
+    "giocatori_max": 5,
+    "durata_minuti": 120,
+    "peso": 3.67,
+    "tipo": [
+      "Strategy Game"
+    ],
+    "categorie": [
+      "Card Game",
+      "Economic",
+      "Negotiation",
+      "Political",
+      "Spies / Secret Agents"
+    ],
+    "meccaniche": [
+      "Area Majority / Influence",
+      "Area Movement",
+      "Hand Management",
+      "Simulation"
+    ],
+    "famiglie": [
+      "Country: Afghanistan",
+      "Country: Russia",
+      "Country: United Kingdom",
+      "Game: Pax Pamir",
+      "History: Anglo-Afghan Wars",
+      "Mechanism: Tableau Building",
+      "Series: Pax",
+      "Theme: Colonial"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "De Influencer",
@@ -6744,7 +7268,8 @@
       "Admin: Upcoming Releases",
       "Crowdfunding: Gamefound"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Last Friday",
@@ -6780,21 +7305,27 @@
       "Movies: Horror Movies",
       "Players: One versus Many"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Il gioco è tratto (numeri)",
     "Posizione": "Cubo 23",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
+    "annotazioni": "numeri",
+    "bgg_id": "429847",
+    "giocatori_min": 1,
+    "giocatori_max": 99,
+    "durata_minuti": 10,
     "peso": null,
     "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
+    "categorie": [
+      "Word Game"
+    ],
+    "meccaniche": [
+      "Paper-and-Pencil"
+    ],
     "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Il gioco è tratto (numeri)\""
+    "bgg_errore": null
   },
   {
     "Gioco": "Il gioco è tratto (strategia)",
@@ -6815,7 +7346,8 @@
     "famiglie": [
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "strategia"
   },
   {
     "Gioco": "Il gioco è tratto (parole)",
@@ -6833,7 +7365,8 @@
       "Paper-and-Pencil"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "parole"
   },
   {
     "Gioco": "Ito",
@@ -6859,7 +7392,8 @@
     "famiglie": [
       "Misc: LongPack Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Blind Jack",
@@ -6882,7 +7416,8 @@
     "famiglie": [
       "Card Games: Adding"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Auztralia",
@@ -6923,7 +7458,8 @@
       "Series: The Great Designers (Stronghold Games)",
       "Theme: Cthulhu Mythos"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Meadows",
@@ -6951,7 +7487,8 @@
       "Digital Implementations: Tabletopia",
       "Holidays: Halloween"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Valley hoopers",
@@ -6982,7 +7519,8 @@
     "famiglie": [
       "Sports: Basketball"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Trio",
@@ -7005,7 +7543,8 @@
     "famiglie": [
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Le 5 torri",
@@ -7034,7 +7573,8 @@
       "Misc: LongPack Games",
       "Theme: Construction"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Churchill",
@@ -7071,7 +7611,8 @@
       "Series: Great Statesmen (GMT)",
       "War Level of Command: Grand Strategy"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Seconda chance",
@@ -7096,7 +7637,8 @@
       "Components: Polyominoes",
       "Mechanism: Flip-and-Write"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Le strade d’inchiostro",
@@ -7136,7 +7678,8 @@
       "Theme: Cacti and Succulents",
       "Theme: Deserts"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "L'isola dei vulcani",
@@ -7159,7 +7702,8 @@
       "Country: Chile",
       "Theme: Volcanoes"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Xi’an",
@@ -7186,7 +7730,8 @@
       "Cities: Xi'an (China)",
       "Country: China"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Ceylon",
@@ -7208,7 +7753,8 @@
     "famiglie": [
       "Country: Sri Lanka"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Yukon airways",
@@ -7246,7 +7792,8 @@
       "Organizations: The Game Artisans of Canada",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Parsifal a game of tarots",
@@ -7283,7 +7830,8 @@
       "Digital Implementations: Tabletopia",
       "Music: Opera"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Otys",
@@ -7311,7 +7859,8 @@
       "Theme: Treasure Diving",
       "Theme: Under the Sea"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Jerusalem",
@@ -7331,7 +7880,8 @@
     "famiglie": [
       "Cities: Jerusalem"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "It’s a wonderful world",
@@ -7370,11 +7920,13 @@
       "Mechanism: Tableau Building",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Zombie Dinner",
     "Posizione": "Cubo 26",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -7424,11 +7976,13 @@
       "Mechanism: Tableau Building",
       "Theme: Colonial"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Belzoni",
     "Posizione": "Cubo 26",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -7474,7 +8028,8 @@
       "Region: Mediterranean Sea",
       "Series: Eurocity Trilogy (Braincrack Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Valparaiso",
@@ -7500,7 +8055,8 @@
       "Components: Wooden pieces & boards",
       "Country: Chile"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Newton",
@@ -7521,7 +8077,8 @@
       "Occupation: Researcher / Scientist",
       "Theme: Physics"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Doodle dungeon",
@@ -7548,7 +8105,8 @@
       "Misc: LongPack Games",
       "Theme: Construction"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Agorà",
@@ -7597,7 +8155,8 @@
       "Game: 7 Wonders",
       "Game: 7 Wonders Duel"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Mosaic",
@@ -7615,7 +8174,8 @@
       "Tile Placement"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Vegetables",
@@ -7637,7 +8197,8 @@
     "famiglie": [
       "Digital Implementations: Board Game Arena"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Escape mini",
@@ -7656,7 +8217,8 @@
       "Category: Escape Room Games",
       "TV Shows: Rick and Morty"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Poop poop",
@@ -7677,7 +8239,8 @@
       "Take That"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Art robbery",
@@ -7702,7 +8265,8 @@
       "Theme: Burglary and Heists",
       "Theme: Painting / Paintings"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Hanabi",
@@ -7739,7 +8303,8 @@
       "Misc: Dice Tower Hall of Fame",
       "Theme: Fireworks"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "I pilastri della terra",
@@ -7774,7 +8339,8 @@
       "Series: Literature (Kosmos)",
       "Series: The Pillars of the Earth (Kosmos)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Fox on the run",
@@ -7796,11 +8362,13 @@
     "famiglie": [
       "Animals: Foxes"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Va gloria games (2)",
     "Posizione": "Cubo 28",
+    "annotazioni": "2",
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -7810,7 +8378,7 @@
     "categorie": [],
     "meccaniche": [],
     "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Va gloria games (2)\""
+    "bgg_errore": "Nessun gioco trovato su BGG per \"Va gloria games\""
   },
   {
     "Gioco": "Oh my goods!",
@@ -7850,7 +8418,8 @@
       "Players: Games with expansions that add solo play",
       "Setting: Longsdale (Lookout Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Plumbs",
@@ -7869,7 +8438,8 @@
       "Set Collection"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Venerdì",
@@ -7909,7 +8479,8 @@
       "Theme: Pirates",
       "Theme: Tropical Islands"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Escape room il gioco",
@@ -7936,7 +8507,8 @@
       "Misc: Limited Replayability",
       "Series: Escape Room – The Game (Identity Games International B.V.)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Warehouse 51",
@@ -7956,7 +8528,8 @@
       "Set Collection"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Hungry monkey",
@@ -7985,7 +8558,8 @@
       "Series: Radiant Culture Series (HeidelBÄR)",
       "Traditional Card Games: Palace"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Parsec",
@@ -8007,7 +8581,8 @@
     "famiglie": [
       "Series: Euro Games (Victory Point Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Undo “sangue sul selciato”",
@@ -8036,7 +8611,8 @@
       "Series: Undo (Pegasus Spiele)",
       "Theme: Time Travel"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "sangue sul selciato"
   },
   {
     "Gioco": "Spicy",
@@ -8066,7 +8642,8 @@
       "Series: Radiant Culture Series (HeidelBÄR)",
       "Theme: Food / Cooking"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Penny papers Adventure skull Island",
@@ -8091,7 +8668,8 @@
       "Misc: LongPack Games",
       "Series: Penny Papers Adventures (Sit Down!)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Magic Mandala",
@@ -8112,7 +8690,8 @@
     "famiglie": [
       "Organizations: Board Games Association of Creators in Spain (LUDO)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Short Circuit",
@@ -8136,11 +8715,13 @@
       "Admin: Upcoming Releases",
       "Crowdfunding: Kickstarter"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "German Democratic Republic",
     "Posizione": "Cubo 28",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -8181,7 +8762,8 @@
       "Sports: Bicycling / Cycling",
       "Theme: Anthropomorphic Animals"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Venice",
@@ -8217,7 +8799,8 @@
       "Series: Eurocity Trilogy (Braincrack Games)",
       "Theme: Canals"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "New York zoo",
@@ -8257,7 +8840,8 @@
       "Digital Implementations: Tabletopia",
       "Theme: Zoos, Aquaria, Safari Parks"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Clinic Deluxe edition",
@@ -8294,7 +8878,8 @@
       "Medical: Hospitals / Clinics",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Wendake",
@@ -8328,7 +8913,8 @@
       "Region: Great Lakes",
       "Theme: Native Americans / First Peoples"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Wendake new allies",
@@ -8357,7 +8943,8 @@
     "famiglie": [
       "Theme: Native Americans / First Peoples"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Casa Dolce Casa",
@@ -8379,7 +8966,8 @@
     "famiglie": [
       "Theme: Rooms: Interiour Design, Home Decoration, Tidying"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "A Sky of stars",
@@ -8399,7 +8987,8 @@
       "Voting"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Smartphone",
@@ -8426,7 +9015,8 @@
       "Series: Smartphone Inc.",
       "Theme: Factories"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Unicorn Fever",
@@ -8459,7 +9049,8 @@
       "Digital Implementations: Tabletopia",
       "Sports: Horse Racing"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Tetrarchia",
@@ -8493,7 +9084,8 @@
       "Players: Games with Solitaire Rules",
       "Players: Wargames with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Wine Cellar",
@@ -8516,7 +9108,8 @@
       "Country: USA",
       "Food & Drink: Wine"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Hamlet “costruisci il tuo villaggio”",
@@ -8549,7 +9142,8 @@
       "Crowdfunding: Kickstarter",
       "Digital Implementations: Tabletopia"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "costruisci il tuo villaggio"
   },
   {
     "Gioco": "1981 Tycoon India",
@@ -8586,7 +9180,8 @@
       "Digital Implementations: Tabletopia",
       "Misc: LongPack Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "1883",
@@ -8618,7 +9213,8 @@
       "Players: Wargames with Rules Supporting Only Two Players",
       "Series: Great Battles of History (GMT Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Mezzanotte mistero in alto mare",
@@ -8647,7 +9243,8 @@
       "Theme: Cruise ships",
       "Theme: Mystery / Crime"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Ciarlatani di Quedlinburgo",
@@ -8688,7 +9285,8 @@
       "Players: Games with expansions that change player count",
       "Theme: Witches"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "World Order",
@@ -8721,7 +9319,8 @@
       "Digital Implementations: Tabletopia",
       "Game: Hegemony"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Paolo e Francesca",
@@ -8746,7 +9345,8 @@
     "famiglie": [
       "Country: Italy"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Comedia “inferno”",
@@ -8775,7 +9375,8 @@
       "Digital Implementations: TableTop Simulator Mod (TTS)",
       "Theme: Hell"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "inferno"
   },
   {
     "Gioco": "Makemaki",
@@ -8797,7 +9398,8 @@
       "Food & Drink: Sushi",
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Camel up",
@@ -8834,7 +9436,8 @@
       "Players: Games with expansions that change player count",
       "Theme: Deserts"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Ishtar",
@@ -8862,7 +9465,8 @@
       "Misc: Mensa Select",
       "Theme: Gardening"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Pharaon",
@@ -8892,7 +9496,8 @@
       "Mythology: Egyptian",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "K2 BIG BOX",
@@ -8925,7 +9530,8 @@
       "Sports: Mountain Climbing",
       "Versions & Editions: Big Box Versions of Individual Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Hidden games “in bilico su un filo”",
@@ -8949,7 +9555,8 @@
       "Series: Hidden Games (Hidden Industries GmbH)",
       "Theme: Mystery / Crime"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "in bilico su un filo"
   },
   {
     "Gioco": "Tzolk’in il calendario maya",
@@ -8991,7 +9598,8 @@
       "Theme: Native Americans / First Peoples",
       "Theme: Tropical"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Tzolk'in “tribù e profezie”",
@@ -9026,7 +9634,8 @@
       "Theme: Native Americans / First Peoples",
       "Theme: Tropical"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "tribù e profezie"
   },
   {
     "Gioco": "Tianxia",
@@ -9060,7 +9669,8 @@
       "Misc: LongPack Games",
       "Series: T games (Daniele Tascini)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Theocratia",
@@ -9086,7 +9696,8 @@
       "Crowdfunding: Gamefound",
       "Series: T games (Daniele Tascini)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Brass Birmingham",
@@ -9143,7 +9754,8 @@
       "Organizations: The Game Artisans of Canada",
       "Theme: Canals"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Days of ire Budapest 1956",
@@ -9187,7 +9799,8 @@
       "Players: Wargames with Solitaire Rules",
       "Theme: Revolution/Uprising"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Meeple Land",
@@ -9221,7 +9834,8 @@
       "Misc: Watch It Played How To Videos",
       "Theme: Amusement Parks / Theme Parks"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Flash point",
@@ -9244,7 +9858,8 @@
     "famiglie": [
       "Theme: Firefighting"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Maple Valley",
@@ -9277,7 +9892,8 @@
       "Series: Creature Comforts (KTBG)",
       "Theme: Anthropomorphic Animals"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Creature Comforts",
@@ -9336,21 +9952,48 @@
       "Theme: Trees and Forests",
       "Theme: Winter Rest / Hibernation"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Città perdute (avvincenti spedizioni per 2)",
     "Posizione": "Cubo 34",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Città perdute (avvincenti spedizioni per 2)\""
+    "annotazioni": "avvincenti spedizioni per 2",
+    "bgg_id": "50",
+    "giocatori_min": 2,
+    "giocatori_max": 2,
+    "durata_minuti": 30,
+    "peso": 1.47,
+    "tipo": [
+      "Family Game"
+    ],
+    "categorie": [
+      "Card Game",
+      "Exploration",
+      "Number"
+    ],
+    "meccaniche": [
+      "Hand Management",
+      "Melding and Splaying",
+      "Ordering",
+      "Push Your Luck",
+      "Score-and-Reset Game",
+      "Set Collection"
+    ],
+    "famiglie": [
+      "Card Games: Draw and Discard",
+      "Card Games: Lane Battler",
+      "Digital Implementations: Board Game Arena",
+      "Digital Implementations: Steam",
+      "Digital Implementations: Triqqy",
+      "Game: Lost Cities",
+      "Misc: Dice Tower Hall of Fame",
+      "Misc: LongPack Games",
+      "Players: Two-Player Only Games",
+      "Series: Two-player games (Kosmos)",
+      "Theme: Archaeology / Paleontology"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Panda Spin",
@@ -9380,7 +10023,8 @@
       "Card Games: Shedding / Stops",
       "Digital Implementations: Board Game Arena"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Agricola",
@@ -9425,7 +10069,8 @@
       "Series: Harvest (Uwe Rosenberg)",
       "Theme: Food / Cooking"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Resistenza!",
@@ -9460,7 +10105,8 @@
       "History: World War II (Italian Resistance)",
       "Region: Tuscany (Italy)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Caduta di Roma",
@@ -9497,11 +10143,13 @@
       "History: Barbarian migrations and invasions",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Astoria la fattoria degli animali",
     "Posizione": "Cubo 35",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -9549,7 +10197,8 @@
       "Theme: Mail / Stamps / The Post Office",
       "Theme: Painting / Paintings"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "13 giorni",
@@ -9595,7 +10244,8 @@
       "Political: United Nations",
       "Theme: Nuclear Option"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Jungla",
@@ -9617,7 +10267,8 @@
       "Tile Placement"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Mississippi Queen",
@@ -9648,7 +10299,8 @@
       "Rivers: Mississippi",
       "States: Mississippi"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Jekyll vs Hyde",
@@ -9680,7 +10332,8 @@
       "Organizations: Forgenext",
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Big cheese",
@@ -9699,11 +10352,13 @@
       "Components: Marbles",
       "Food & Drink: Cheese"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Honey combs",
     "Posizione": "Cubo 36",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -9732,7 +10387,8 @@
       "Dice Rolling"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "La spedizione perduta",
@@ -9757,21 +10413,33 @@
       "Game: The Lost Expedition",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Effetto terra “salvare il pianeta è un gioco”",
     "Posizione": "Cubo 36",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
+    "annotazioni": "salvare il pianeta è un gioco",
+    "bgg_id": "375623",
+    "giocatori_min": 2,
+    "giocatori_max": 99,
+    "durata_minuti": 30,
+    "peso": 1.0,
     "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Effetto terra “salvare il pianeta è un gioco”\""
+    "categorie": [
+      "Card Game",
+      "Educational",
+      "Environmental",
+      "Trivia"
+    ],
+    "meccaniche": [
+      "Cooperative Game"
+    ],
+    "famiglie": [
+      "Mechanism: Card Line",
+      "Theme: Climate Change"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Lawyer up: il Padrino",
@@ -9799,7 +10467,8 @@
       "Players: Two-Player Only Games",
       "Theme: Attorneys / Courts"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Circus express",
@@ -9820,7 +10489,8 @@
     "famiglie": [
       "Theme: Circus"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Lock down",
@@ -9848,21 +10518,31 @@
       "Digital Implementations: TableTop Simulator Mod (TTS)",
       "Series: Down in Flames (Dan Verssen)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Space Race (quadrata)",
     "Posizione": "Cubo 36",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
+    "annotazioni": "quadrata",
+    "bgg_id": "1791",
+    "giocatori_min": 1,
+    "giocatori_max": 6,
+    "durata_minuti": 90,
+    "peso": 1.67,
     "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
+    "categorie": [
+      "Civilization",
+      "Exploration",
+      "Space Exploration"
+    ],
+    "meccaniche": [
+      "Action Points",
+      "Tile Placement",
+      "Trading"
+    ],
     "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Space Race (quadrata)\""
+    "bgg_errore": null
   },
   {
     "Gioco": "Le catacombe di karak",
@@ -9903,7 +10583,8 @@
       "Occupation: Adventurer / Explorer",
       "Series: Karak"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Karak regent",
@@ -9930,7 +10611,8 @@
       "Misc: LongPack Games",
       "Series: Karak"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Campus cafè",
@@ -9951,7 +10633,8 @@
       "Worker Placement"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Sagrada",
@@ -9969,7 +10652,8 @@
       "Roll / Spin and Move"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Verrix",
@@ -10000,7 +10684,8 @@
       "Crowdfunding: Kickstarter",
       "Digital Implementations: Tabletopia"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Twilight inscription",
@@ -10029,7 +10714,8 @@
       "Players: Games with Solitaire Rules",
       "Versions & Editions: Roll- or Flip-and-Write Versions of Non-Writing Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Hellapagos",
@@ -10062,7 +10748,8 @@
       "Theme: Survival",
       "Theme: Tropical Islands"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Natsumemo",
@@ -10091,7 +10778,8 @@
       "Mechanism: Flip-and-Write",
       "Misc: LongPack Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "5 minute mystery",
@@ -10118,7 +10806,8 @@
       "Series: 5-Minute (Connor Reid)",
       "Theme: Anthropomorphic Animals"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Dune",
@@ -10162,11 +10851,13 @@
       "Misc: Dice Tower Hall of Fame",
       "Theme: Deserts"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Dune ‘ixiani e Tleilaux” espansione fazioni",
     "Posizione": "Cubo 38",
+    "annotazioni": "ixiani e Tleilaux",
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -10176,7 +10867,7 @@
     "categorie": [],
     "meccaniche": [],
     "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Dune ‘ixiani e Tleilaux” espansione fazioni\""
+    "bgg_errore": "Nessun gioco trovato su BGG per \"Dune espansione fazioni\""
   },
   {
     "Gioco": "Oranges and Lemons",
@@ -10206,7 +10897,8 @@
     "famiglie": [
       "Cities: London (England, UK)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Here comes a candle (Oranges and Lemons)",
@@ -10227,7 +10919,8 @@
     "famiglie": [
       "Admin: Upcoming Releases"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "Oranges and Lemons"
   },
   {
     "Gioco": "Guerra lampo Blitzkrieg!",
@@ -10272,7 +10965,8 @@
       "Series: 20 Minutes! (PSC Games)",
       "Series: Winzige Welten (Schwerkraft-Verlag)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Cloud city",
@@ -10300,11 +10994,13 @@
       "Misc: Watch It Played How To Videos",
       "Theme: Construction"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Otto 8gameover",
     "Posizione": "Cubo 39",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -10341,7 +11037,8 @@
       "Set Collection"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "I palazzi di Carrara",
@@ -10371,7 +11068,8 @@
       "Occupation: Merchant",
       "Region: Tuscany (Italy)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Hidden games “veleno verde”",
@@ -10397,7 +11095,8 @@
       "Series: Hidden Games (Hidden Industries GmbH)",
       "Theme: Mystery / Crime"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "veleno verde"
   },
   {
     "Gioco": "Hidden games “il diadema di mezzanotte”",
@@ -10421,7 +11120,8 @@
       "Series: Hidden Games (Hidden Industries GmbH)",
       "Theme: Mystery / Crime"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "il diadema di mezzanotte"
   },
   {
     "Gioco": "Hidden games “il caso di Villasetia”",
@@ -10447,7 +11147,8 @@
       "Series: Hidden Games (Hidden Industries GmbH)",
       "Theme: Mystery / Crime"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "il caso di Villasetia"
   },
   {
     "Gioco": "Prospect detective -caso 0074-",
@@ -10470,7 +11171,8 @@
       "Components: Digital Hybrid – App/Website Required",
       "Series: Prospect Detective (Unalfabeta)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Prospect detective -caso 0090-",
@@ -10493,7 +11195,8 @@
       "Components: Digital Hybrid – App/Website Required",
       "Series: Prospect Detective (Unalfabeta)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Prospect detective -caso 0056-",
@@ -10516,7 +11219,8 @@
       "Components: Digital Hybrid – App/Website Required",
       "Series: Prospect Detective (Unalfabeta)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Cloud City",
@@ -10544,7 +11248,8 @@
       "Misc: Watch It Played How To Videos",
       "Theme: Construction"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "La casa dei sogni",
@@ -10574,7 +11279,8 @@
       "Theme: Construction",
       "Theme: Rooms: Interiour Design, Home Decoration, Tidying"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Squadro",
@@ -10602,7 +11308,8 @@
       "Players: Two-Player Only Games",
       "Series: Classic (Gigamic)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Quoridor",
@@ -10637,7 +11344,8 @@
       "Misc: Watch It Played How To Videos",
       "Series: Classic (Gigamic)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Pylos",
@@ -10670,7 +11378,8 @@
       "Series: Basic (Gigamic)",
       "Series: Classic (Gigamic)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Happy pigs",
@@ -10696,7 +11405,8 @@
       "Animals: Pigs",
       "Occupation: Farmer"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Patchwork",
@@ -10745,7 +11455,8 @@
       "Series: Fur Zwei Spieler (Lookout Games)",
       "Theme: Austronesian peoples"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Mini Rogue",
@@ -10778,7 +11489,8 @@
       "Players: Games with Solitaire Rules",
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "7 Wonders",
@@ -10834,7 +11546,8 @@
       "Misc: Watch It Played How To Videos",
       "Players: Games with expansions that change player count"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "7 Wonders Duel",
@@ -10889,7 +11602,8 @@
       "Players: Two-Player Only Games",
       "Versions & Editions: Two-Player Versions of More-Player Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "7 Wonders Duel Pantheon",
@@ -10922,25 +11636,48 @@
       "Game: 7 Wonders Duel",
       "Mechanism: Tableau Building"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "In giallo “Delitto in una villa”",
     "Posizione": "Cubo 41",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"In giallo “Delitto in una villa”\""
+    "annotazioni": "Delitto in una villa",
+    "bgg_id": "25945",
+    "giocatori_min": 1,
+    "giocatori_max": 8,
+    "durata_minuti": 240,
+    "peso": 3.21,
+    "tipo": [
+      "Thematic"
+    ],
+    "categorie": [
+      "Adventure",
+      "Expansion for Base-game",
+      "Fighting",
+      "Horror",
+      "Novel-based",
+      "Science Fiction"
+    ],
+    "meccaniche": [
+      "Cooperative Game",
+      "Dice Rolling",
+      "Hand Management",
+      "Point to Point Movement",
+      "Variable Player Powers"
+    ],
+    "famiglie": [
+      "Game: Arkham Horror",
+      "Game: Arkham Horror (Second Edition)",
+      "Series: Arkham Horror Files (Fantasy Flight Games)",
+      "Theme: Cthulhu Mythos"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Bestsellers “scrittore per gioco”",
     "Posizione": "Cubo 41",
+    "annotazioni": "scrittore per gioco",
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -10950,7 +11687,7 @@
     "categorie": [],
     "meccaniche": [],
     "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Bestsellers “scrittore per gioco”\""
+    "bgg_errore": "Nessun gioco trovato su BGG per \"Bestsellers\""
   },
   {
     "Gioco": "Coffe Traders",
@@ -10980,7 +11717,8 @@
       "Crowdfunding: Spieleschmiede",
       "Food & Drink: Coffee"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "La festa per Odino",
@@ -11040,7 +11778,8 @@
       "Theme: Food / Cooking",
       "Theme: Vikings"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "The resistance",
@@ -11079,7 +11818,8 @@
       "Series: Postcard Box Games (Indie Boards and Cards)",
       "Setting: Dystopian Universe (Indie Boards & Cards)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Targi",
@@ -11117,7 +11857,8 @@
       "Players: Two-Player Only Games",
       "Series: Two-player games (Kosmos)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Una storia di pirati",
@@ -11148,7 +11889,8 @@
       "Components: Sand Timers",
       "Theme: Pirates"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Vinhos DELUX edition",
@@ -11166,7 +11908,8 @@
     "famiglie": [
       "Game: Vinhos"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Black Sonata",
@@ -11203,7 +11946,8 @@
       "Players: Games with Solitaire Rules",
       "Players: Solitaire Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Big city",
@@ -11230,7 +11974,8 @@
       "Components: Polyominoes",
       "Theme: City"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Scotland yard",
@@ -11263,7 +12008,8 @@
       "Players: One versus Many",
       "Theme: Police"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Cluedo",
@@ -11329,7 +12075,8 @@
       "TV Shows: The Simpsons",
       "Versions & Editions: Bigger Versions of Regular-Size Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Monopoly",
@@ -11383,11 +12130,13 @@
       "States: New Jersey",
       "Theme: Cereal Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Bag man",
     "Posizione": "Cubo 43",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -11420,25 +12169,48 @@
     "famiglie": [
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "De Vulgari Eloquenzia",
     "Posizione": "Cubo 44",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"De Vulgari Eloquenzia\""
+    "annotazioni": null,
+    "bgg_id": "75165",
+    "giocatori_min": 2,
+    "giocatori_max": 5,
+    "durata_minuti": 120,
+    "peso": 3.64,
+    "tipo": [
+      "Strategy Game"
+    ],
+    "categorie": [
+      "Medieval",
+      "Religious",
+      "Travel"
+    ],
+    "meccaniche": [
+      "Action Points",
+      "Area Movement",
+      "Set Collection"
+    ],
+    "famiglie": [
+      "Components: Map (Continental / National scale)",
+      "Components: Wooden pieces & boards",
+      "Country: Italy",
+      "Digital Implementations: Tabletopia",
+      "History: Italian City-States",
+      "Religious: Monks/Abbots & Monasteries/Abbeys",
+      "Religious: Pope",
+      "Theme: Language / Linguistics",
+      "Theme: Science"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Botton GP (2)",
     "Posizione": "Cubo 44",
+    "annotazioni": "2",
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -11448,11 +12220,12 @@
     "categorie": [],
     "meccaniche": [],
     "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Botton GP (2)\""
+    "bgg_errore": "Nessun gioco trovato su BGG per \"Botton GP\""
   },
   {
     "Gioco": "Botton cyclo (2)",
     "Posizione": "Cubo 44",
+    "annotazioni": "2",
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -11462,7 +12235,7 @@
     "categorie": [],
     "meccaniche": [],
     "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Botton cyclo (2)\""
+    "bgg_errore": "Nessun gioco trovato su BGG per \"Botton cyclo\""
   },
   {
     "Gioco": "Boss Monster “il bunker dei cattivi”",
@@ -11489,7 +12262,8 @@
     "famiglie": [
       "Game: Boss Monster"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "il bunker dei cattivi"
   },
   {
     "Gioco": "Cacao",
@@ -11527,7 +12301,8 @@
       "Occupation: Merchant",
       "Theme: Tropical"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Cacao Cioccolato",
@@ -11556,7 +12331,8 @@
       "Food & Drink: Chocolate",
       "Theme: Food / Cooking"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Corsari",
@@ -11584,7 +12360,8 @@
       "Card Games: Draw and Discard",
       "Traditional Card Games: Rummy"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Tic toc",
@@ -11607,7 +12384,8 @@
     "famiglie": [
       "Folk Tales & Fairy Tales: Peter Pan"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "433",
@@ -11632,11 +12410,13 @@
       "Animals: Sharks",
       "Components: 12 x 12 Grids"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Olympic Cards",
     "Posizione": "Cubo 44",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -11672,11 +12452,13 @@
       "Game: Monopoly (Official)",
       "Promotional: Board Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Casino poker e ramino leggero",
     "Posizione": "Cubo 44",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -11712,7 +12494,8 @@
       "Misc: Limited Replayability",
       "Series: EXIT: The Game (KOSMOS)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "in volo verso l'ignoto"
   },
   {
     "Gioco": "Tiny Epic defenders",
@@ -11748,7 +12531,8 @@
       "Players: Games with Solitaire Rules",
       "Series: Tiny Epic (Gamelyn Games/Tycoon Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Arena",
@@ -11775,7 +12559,8 @@
       "Players: Two-Player Only Games",
       "Theme: Gladiators"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Lancillotto",
@@ -11798,7 +12583,8 @@
     "famiglie": [
       "Theme: King Arthur / The Knights of the Round Table / Camelot"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Super Cats",
@@ -11828,7 +12614,8 @@
       "Comic Books: Teenage Mutant Ninja Turtles",
       "Players: One versus Many"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Speculate",
@@ -11847,7 +12634,8 @@
       "Trading"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Monopoly deal gioco di carte",
@@ -11877,7 +12665,8 @@
       "Traditional Card Games: Rummy",
       "Versions & Editions: Card Versions of Non-Card Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "La famiglia",
@@ -11900,7 +12689,8 @@
       "Take That"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Atelier",
@@ -11922,7 +12712,8 @@
     "famiglie": [
       "Theme: Painting / Paintings"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Quadriga",
@@ -11946,7 +12737,8 @@
       "Ancient: Rome",
       "Series: Buchkassette (Pelikan)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Terra-017",
@@ -11968,7 +12760,8 @@
       "Worker Placement"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "House of Fado",
@@ -12002,7 +12795,8 @@
       "Players: Games with Solitaire Rules",
       "Theme: Restaurant/Café"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "patient zero",
@@ -12024,7 +12818,8 @@
       "Hexagon Grid"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Viceroy",
@@ -12062,11 +12857,13 @@
       "Players: Games with Solitaire Rules",
       "Series: Berserk (Hobby World)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "The Fall of the King -  Ventura Battlesystem",
     "Posizione": "Cubo 45",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -12076,21 +12873,39 @@
     "categorie": [],
     "meccaniche": [],
     "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"The Fall of the King -  Ventura Battlesystem\""
+    "bgg_errore": "Nessun gioco trovato su BGG per \"The Fall of the King - Ventura Battlesystem\""
   },
   {
     "Gioco": "Flame Rouge - Peloton",
     "Posizione": "Cubo 45",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Flame Rouge - Peloton\""
+    "annotazioni": null,
+    "bgg_id": "229941",
+    "giocatori_min": 1,
+    "giocatori_max": 12,
+    "durata_minuti": 45,
+    "peso": 1.82,
+    "tipo": [
+      "Thematic",
+      "Family Game"
+    ],
+    "categorie": [
+      "Expansion for Base-game",
+      "Racing",
+      "Sports"
+    ],
+    "meccaniche": [
+      "Hand Management",
+      "Modular Board",
+      "Simulation",
+      "Simultaneous Action Selection"
+    ],
+    "famiglie": [
+      "Game: Flamme Rouge",
+      "Players: Expansions Adding Solo Play",
+      "Players: Expansions Changing Player Count",
+      "Sports: Bicycling / Cycling"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Sherlock Holmes “Carlton house e queen’s park",
@@ -12125,35 +12940,72 @@
       "Misc: Limited Replayability",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "Carlton house e queen"
   },
   {
     "Gioco": "Unlock “timeless Adventure”",
     "Posizione": "Cubo 46",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
+    "annotazioni": "timeless Adventure",
+    "bgg_id": "452499",
+    "giocatori_min": 1,
+    "giocatori_max": 4,
+    "durata_minuti": 60,
     "peso": null,
     "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Unlock “timeless Adventure”\""
+    "categorie": [
+      "Animals",
+      "Card Game",
+      "Children's Game",
+      "Collectible Components",
+      "Movies / TV / Radio theme"
+    ],
+    "meccaniche": [
+      "Cooperative Game",
+      "Deck Construction",
+      "Solo / Solitaire Game",
+      "Trading"
+    ],
+    "famiglie": [
+      "Admin: Upcoming Releases",
+      "Animals: Bears",
+      "Crowdfunding: Kickstarter",
+      "Theme: Boss Battle",
+      "Theme: Care Bears"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Unlock “ escape Adventure”",
     "Posizione": "Cubo 46",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
+    "annotazioni": "escape Adventure",
+    "bgg_id": "452499",
+    "giocatori_min": 1,
+    "giocatori_max": 4,
+    "durata_minuti": 60,
     "peso": null,
     "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Unlock “ escape Adventure”\""
+    "categorie": [
+      "Animals",
+      "Card Game",
+      "Children's Game",
+      "Collectible Components",
+      "Movies / TV / Radio theme"
+    ],
+    "meccaniche": [
+      "Cooperative Game",
+      "Deck Construction",
+      "Solo / Solitaire Game",
+      "Trading"
+    ],
+    "famiglie": [
+      "Admin: Upcoming Releases",
+      "Animals: Bears",
+      "Crowdfunding: Kickstarter",
+      "Theme: Boss Battle",
+      "Theme: Care Bears"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Fuga dal manicomio",
@@ -12179,7 +13031,8 @@
       "Category: Escape Room Games",
       "Medical: Psychiatric Hospitals / Asylums"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Cryptid",
@@ -12209,7 +13062,8 @@
       "Misc: LongPack Games",
       "Theme: Cryptids"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Dark story",
@@ -12235,21 +13089,36 @@
       "Storytelling"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Escape room il gioco (la bambina e La casa sul lago)",
     "Posizione": "Cubo 46",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Escape room il gioco (la bambina e La casa sul lago)\""
+    "annotazioni": "la bambina e La casa sul lago",
+    "bgg_id": "204836",
+    "giocatori_min": 3,
+    "giocatori_max": 5,
+    "durata_minuti": 60,
+    "peso": 2.25,
+    "tipo": [
+      "Family Game"
+    ],
+    "categorie": [
+      "Electronic",
+      "Puzzle"
+    ],
+    "meccaniche": [
+      "Cooperative Game",
+      "Deduction",
+      "Elapsed Real Time Ending"
+    ],
+    "famiglie": [
+      "Category: Escape Room Games",
+      "Misc: Limited Replayability",
+      "Series: Escape Room – The Game (Identity Games International B.V.)"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Deckscape “dietro il sipario”",
@@ -12276,7 +13145,8 @@
       "Players: Games with Solitaire Rules",
       "Series: Deckscape (dV Giochi)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "dietro il sipario"
   },
   {
     "Gioco": "Deckscape “nel paese delle meraviglie”",
@@ -12300,21 +13170,33 @@
       "Category: Escape Room Games",
       "Series: Deckscape (dV Giochi)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "nel paese delle meraviglie"
   },
   {
     "Gioco": "Deckscape “ la morte bara a carte”",
     "Posizione": "Cubo 46",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
+    "annotazioni": "la morte bara a carte",
+    "bgg_id": "295571",
+    "giocatori_min": 2,
+    "giocatori_max": 6,
+    "durata_minuti": 90,
+    "peso": 1.5,
     "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Deckscape “ la morte bara a carte”\""
+    "categorie": [
+      "Card Game",
+      "Pirates",
+      "Puzzle",
+      "Real-time"
+    ],
+    "meccaniche": [
+      "Team-Based Game"
+    ],
+    "famiglie": [
+      "Category: Escape Room Games",
+      "Series: Deckscape (dV Giochi)"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Escape room ( misteri mortali)",
@@ -12340,7 +13222,8 @@
       "Category: Escape Room Games",
       "Series: Escape Room – The Game (Identity Games International B.V.)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "misteri mortali"
   },
   {
     "Gioco": "Decktective “segreti nella sabbia”",
@@ -12369,21 +13252,38 @@
       "Misc: Limited Replayability",
       "Series: Decktective (dV Giochi)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "segreti nella sabbia"
   },
   {
     "Gioco": "Pocket detective “legami pericolosi”",
     "Posizione": "Cubo 46",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Pocket detective “legami pericolosi”\""
+    "annotazioni": "legami pericolosi",
+    "bgg_id": "275589",
+    "giocatori_min": 1,
+    "giocatori_max": 6,
+    "durata_minuti": 60,
+    "peso": 1.46,
+    "tipo": [
+      "Thematic"
+    ],
+    "categorie": [
+      "Card Game",
+      "Deduction",
+      "Murder / Mystery"
+    ],
+    "meccaniche": [
+      "Cooperative Game",
+      "Deduction",
+      "Storytelling"
+    ],
+    "famiglie": [
+      "Misc: Limited Replayability",
+      "Players: Games with Solitaire Rules",
+      "Series: Pocket Detective (Lavka Games)",
+      "Theme: Mystery / Crime"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Santa Maria",
@@ -12417,7 +13317,8 @@
       "Players: Games with Solitaire Rules",
       "Theme: Colonial"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Bombay",
@@ -12448,7 +13349,8 @@
       "Digital Implementations: Board Game Arena",
       "Series: Ystari originals"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Limit",
@@ -12476,7 +13378,8 @@
       "Containers: Drawstring Bag",
       "Containers: Zippered Pouch"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Black Orchestra",
@@ -12516,11 +13419,13 @@
       "Misc: LongPack Games",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Palazzo pazzo",
     "Posizione": "Cubo 47",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -12557,7 +13462,8 @@
       "Game: Altiplano",
       "Mountains: Andes"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Tales of evil",
@@ -12591,7 +13497,8 @@
       "Creatures: Demons",
       "Crowdfunding: Kickstarter"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Red flag over Paris",
@@ -12623,7 +13530,8 @@
       "Digital Implementations: Rally the Troops",
       "Series: Lunchtime Games (GMT)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "The king Is dead",
@@ -12659,7 +13567,8 @@
       "Country: Wales",
       "Game:  The King Is Dead"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Armi e acciaio",
@@ -12684,7 +13593,8 @@
       "Game: Guns & Steel",
       "Game: Through the Ages"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Cartaventura “Lhasa”",
@@ -12717,7 +13627,8 @@
       "Players: Games with Solitaire Rules",
       "Series: Cartaventura (BLAM !)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "Lhasa"
   },
   {
     "Gioco": "Alibi",
@@ -12740,7 +13651,8 @@
       "Trading"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Ra",
@@ -12759,11 +13671,13 @@
     "famiglie": [
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "In Initere: dal Po a Luni",
     "Posizione": "Libreria bassa",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -12773,11 +13687,12 @@
     "categorie": [],
     "meccaniche": [],
     "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"In Initere: dal Po a Luni\""
+    "bgg_errore": "Nessun gioco trovato su BGG per \"In itinere: dal Po a Luni\""
   },
   {
     "Gioco": "Sheep Panic",
     "Posizione": "Libreria bassa",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -12816,7 +13731,8 @@
       "Space: Colonization / Extraterrestrial Colonisation",
       "Space: Earth's Moon"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Little Town",
@@ -12841,7 +13757,8 @@
     "famiglie": [
       "Theme: City"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Ciao Ciao",
@@ -12861,7 +13778,8 @@
       "Trading"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Ensemble",
@@ -12887,7 +13805,8 @@
     "famiglie": [
       "Mechanism: Image Interpretation"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Decrypto",
@@ -12910,7 +13829,8 @@
     "famiglie": [
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Fall",
@@ -12948,7 +13868,8 @@
       "Theme: Nature",
       "Theme: Seasons of the year"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Callisto",
@@ -12973,7 +13894,8 @@
       "Components: Polyominoes",
       "Versions & Editions: Travel Versions of Non-Travel Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Kifake",
@@ -12993,7 +13915,8 @@
       "Voting"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Perladora",
@@ -13027,7 +13950,8 @@
       "Digital Implementations: Board Game Arena",
       "Series: Europe Collection (Blue Orange Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Karak imperium",
@@ -13055,7 +13979,8 @@
     "famiglie": [
       "Series: Karak"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Onitama",
@@ -13090,7 +14015,8 @@
       "Series: Dice Tower Essentials",
       "Sports: Combat Sports / Martial Arts"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Onitama La via del maestro",
@@ -13119,7 +14045,8 @@
       "Players: Two-Player Only Games",
       "Series: Dice Tower Essentials"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Afghanistan",
@@ -13145,7 +14072,8 @@
       "History: Soviet-Afghan War",
       "Players: Wargames with Rules Supporting Only Two Players"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Cesare nelle Gallie",
@@ -13165,21 +14093,46 @@
       "Country: France",
       "History: Roman – Gallic Wars"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Dectetive sulla scena del crimine - Stagione 1",
     "Posizione": "Libreria bassa",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Dectetive sulla scena del crimine - Stagione 1\""
+    "annotazioni": "Stagione 1",
+    "bgg_id": "223321",
+    "giocatori_min": 1,
+    "giocatori_max": 5,
+    "durata_minuti": 180,
+    "peso": 2.74,
+    "tipo": [
+      "Thematic"
+    ],
+    "categorie": [
+      "Deduction",
+      "Murder / Mystery"
+    ],
+    "meccaniche": [
+      "Cooperative Game",
+      "Narrative Choice / Paragraph",
+      "Scenario / Mission / Campaign Game",
+      "Solo / Solitaire Game",
+      "Storytelling",
+      "Variable Player Powers"
+    ],
+    "famiglie": [
+      "Components: Digital Hybrid – App/Website Required",
+      "Digital Implementations: Tabletopia",
+      "Game: Detective – A Modern Crime Board Game (Portal Games)",
+      "Mechanism: Campaign Games",
+      "Misc: Limited Replayability",
+      "Misc: LongPack Games",
+      "Misc: Watch It Played How To Videos",
+      "Players: Games with Solitaire Rules",
+      "Theme: Mystery / Crime",
+      "Theme: Police"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Bamboo",
@@ -13201,7 +14154,8 @@
       "Series: Mini Games (Mücke Spiele)",
       "Theme: Samurai"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Secret Identity",
@@ -13225,7 +14179,8 @@
       "Voting"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Rumble Nation",
@@ -13258,7 +14213,8 @@
       "History: Sengoku Period",
       "Misc: LongPack Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "L'Eredità di Yu",
@@ -13293,11 +14249,13 @@
       "Rivers: Yellow",
       "Series: Ancient Anthology (Garphill Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Visconti nel Regno Occidentale",
     "Posizione": "Libreria bassa",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -13360,7 +14318,8 @@
       "Series: The West Kingdom Trilogy (Garphill Games)",
       "Theme: Construction"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Architetti Epoca delle Meraviglie",
@@ -13388,7 +14347,8 @@
       "Series: Medieval Trilogies (Garphill Games)",
       "Series: The West Kingdom Trilogy (Garphill Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Draftosaurus",
@@ -13421,7 +14381,8 @@
       "Organizations: Forgenext",
       "Theme: Zoos, Aquaria, Safari Parks"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Long Road",
@@ -13439,7 +14400,8 @@
     "famiglie": [
       "Crowdfunding: Kickstarter"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Overbooking",
@@ -13463,7 +14425,8 @@
       "Trick-taking"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Welcome to the Las Vegas",
@@ -13483,7 +14446,8 @@
     "famiglie": [
       "Admin: Upcoming Releases"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Saladin",
@@ -13509,7 +14473,8 @@
       "Mechanism: Static Battle",
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Ave Cesare",
@@ -13539,7 +14504,8 @@
       "Series: Book Box (DiceTree)",
       "Sports: Chariot Racing"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Amelia Secret",
@@ -13567,7 +14533,8 @@
       "Components: Digital Hybrid – App/Website Required",
       "Theme: Spooky Old Houses"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Airship",
@@ -13599,7 +14566,8 @@
       "Crowdfunding: Kickstarter",
       "Theme: Airships / Blimps / Dirigibles / Zeppelins"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Hick Hack nel pollaio",
@@ -13631,11 +14599,13 @@
       "Series: The Chicken Family of Zoch",
       "Theme: Food / Cooking"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Cupid is Dead",
     "Posizione": "Libreria bassa",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -13668,7 +14638,8 @@
     "famiglie": [
       "Category: n in a row"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Shopping War",
@@ -13693,7 +14664,8 @@
       "Card Games: Matching",
       "Traditional Card Games: War"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Happy City",
@@ -13724,11 +14696,13 @@
     "famiglie": [
       "Digital Implementations: Board Game Arena"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "9 Nano Games",
     "Posizione": "Libreria bassa",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -13763,7 +14737,8 @@
       "Components: 6 x 6 Grids",
       "Mythology: Egyptian"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "It's Wonderful World Guerra o Pace",
@@ -13794,7 +14769,8 @@
       "Crowdfunding: Kickstarter",
       "Game: It's a Wonderful World"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Tiny Epic Galaxies",
@@ -13838,7 +14814,8 @@
       "Series: Tiny Epic (Gamelyn Games/Tycoon Games)",
       "Series: Winzige Welten (Schwerkraft-Verlag)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Silver Mine",
@@ -13860,7 +14837,8 @@
     "famiglie": [
       "Country: Mexico"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "La Ricetta Perfetta",
@@ -13885,7 +14863,8 @@
       "Admin: Upcoming Releases",
       "Crowdfunding: Kickstarter"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Othello",
@@ -13929,7 +14908,8 @@
       "Versions & Editions: Travel Versions of Non-Travel Games",
       "Video Game Theme: Nintendo"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Siege of the Eternal Night",
@@ -13954,21 +14934,33 @@
       "Mechanism: Roll-and-Write",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Rollinng Village",
     "Posizione": "Sala angolo",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
+    "annotazioni": null,
+    "bgg_id": "306494",
+    "giocatori_min": 1,
+    "giocatori_max": 12,
+    "durata_minuti": 15,
+    "peso": 1.56,
     "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Rollinng Village\""
+    "categorie": [
+      "City Building",
+      "Dice",
+      "Print & Play"
+    ],
+    "meccaniche": [
+      "Dice Rolling",
+      "Paper-and-Pencil"
+    ],
+    "famiglie": [
+      "Mechanism: Roll-and-Write",
+      "Theme: City"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Hidden Leaders",
@@ -14007,7 +14999,8 @@
       "Digital Implementations: Tabletopia",
       "Game: Hidden Leaders"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "One Card Dungeon",
@@ -14044,7 +15037,8 @@
       "Digital Implementations: Tabletopia",
       "Players: Solitaire Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Insert Coin To Play",
@@ -14071,7 +15065,8 @@
       "Digital Implementations: Tabletopia",
       "Mechanism: Flip-and-Write"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Cyberdoom Tower",
@@ -14090,7 +15085,8 @@
       "Dice Rolling"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Nemo's War",
@@ -14126,7 +15122,8 @@
       "Players: Wargames with Solitaire Rules",
       "Theme: Submarines"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Plains Indian Wars",
@@ -14155,7 +15152,8 @@
       "History: Sioux Wars",
       "Theme: Native Americans / First Peoples"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Monasterium",
@@ -14191,7 +15189,8 @@
       "Religious: Monks/Abbots & Monasteries/Abbeys",
       "Theme: Stained Glass"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Mercado de Lisboa",
@@ -14222,7 +15221,8 @@
       "Digital Implementations: Board Game Arena",
       "Digital Implementations: Tabletopia"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Hippocrates",
@@ -14254,7 +15254,8 @@
       "Digital Implementations: Tabletopia",
       "Occupation: Medic / Doctor / Nurses"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Great Western Trail",
@@ -14294,7 +15295,8 @@
       "Series: The Great Designers (Stronghold Games)",
       "States: Texas"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Tabannusi",
@@ -14331,7 +15333,8 @@
       "Series: T games (Daniele Tascini)",
       "Theme: Construction"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Peak Oil Profiteer",
@@ -14366,7 +15369,8 @@
       "Digital Implementations: Tabletopia",
       "Theme: Oil / Gas / Petroleum"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Grand Austria Hotel",
@@ -14404,7 +15408,8 @@
       "Theme: Food / Cooking",
       "Theme: Hotels, Inns, Lodgings"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Bacci Pagano",
@@ -14432,7 +15437,8 @@
       "Islands: Sardinia (Italy)",
       "Theme: Mystery / Crime"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "San Francisco",
@@ -14454,7 +15460,8 @@
     "famiglie": [
       "Cities: San Francisco (California, USA)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "In Giallo",
@@ -14488,7 +15495,8 @@
       "Series: Arkham Horror Files (Fantasy Flight Games)",
       "Theme: Cthulhu Mythos"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Chicago stock Exchange",
@@ -14506,7 +15514,8 @@
       "Stock Holding"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Rune",
@@ -14537,7 +15546,8 @@
       "Players: Games with expansions that change player count",
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Button up",
@@ -14558,7 +15568,8 @@
     "famiglie": [
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Super goal",
@@ -14579,21 +15590,27 @@
       "Players: Two-Player Only Games",
       "Sports: Football / Soccer"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Poolce!",
     "Posizione": "Scatola Monopoli",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
+    "annotazioni": null,
+    "bgg_id": "17719",
+    "giocatori_min": 2,
+    "giocatori_max": 6,
     "durata_minuti": null,
-    "peso": null,
+    "peso": 1.0,
     "tipo": [],
     "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Poolce!\""
+    "meccaniche": [
+      "Roll / Spin and Move"
+    ],
+    "famiglie": [
+      "Theme: Police"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Wild “discovering Animals”",
@@ -14609,21 +15626,30 @@
     ],
     "meccaniche": [],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "discovering Animals"
   },
   {
     "Gioco": "Uh! “Il più selvaggio dei giochi di carte”",
     "Posizione": "Scatola Monopoli",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
+    "annotazioni": "Il più selvaggio dei giochi di carte",
+    "bgg_id": "231499",
+    "giocatori_min": 3,
+    "giocatori_max": 6,
+    "durata_minuti": 10,
     "peso": null,
     "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Uh! “Il più selvaggio dei giochi di carte”\""
+    "categorie": [
+      "Card Game"
+    ],
+    "meccaniche": [
+      "Open Drafting",
+      "Pick-up and Deliver"
+    ],
+    "famiglie": [
+      "Card Games: Shedding / Stops"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Jump!",
@@ -14641,7 +15667,8 @@
       "Simultaneous Action Selection"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Potion",
@@ -14664,11 +15691,13 @@
     "famiglie": [
       "Theme: Alchemy"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "K3 plan your climb",
     "Posizione": "Sopra Kallax",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -14722,7 +15751,8 @@
       "Occupation: Engineer",
       "Theme: Electricity Generation"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "John Company",
@@ -14757,7 +15787,8 @@
       "History: Anglo-Indian Wars",
       "Theme: Colonial"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Hegemony",
@@ -14778,7 +15809,8 @@
       "Setting: Neuroshima",
       "Theme: Post-Apocalyptic"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Stone Age",
@@ -14815,7 +15847,8 @@
       "Game: Stone Age",
       "Misc: Dice Tower Hall of Fame"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Diplomacy",
@@ -14864,7 +15897,8 @@
       "War Battlespace: Land Warfare",
       "War Level of Command: Strategic"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Foo Table",
@@ -14886,7 +15920,8 @@
       "Players: Two-Player Only Games",
       "Sports: Football / Soccer"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Risiko",
@@ -14925,7 +15960,8 @@
       "Series: Nostalgia (Hasbro)",
       "War Battlespace: Land Warfare"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Dei",
@@ -14971,7 +16007,8 @@
       "Political: United Nations",
       "Theme: Nuclear Option"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "L'assedio di Runedar",
@@ -15006,7 +16043,8 @@
       "Creatures: Goblins",
       "Theme: Mining"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Il ballo in maschera delle coccinelle",
@@ -15039,7 +16077,8 @@
       "Misc: LongPack Games",
       "Series: Pegasus Children's Games (Matagot)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Dama cinese",
@@ -15079,7 +16118,8 @@
       "Digital Implementations: Triqqy",
       "Traditional Games: Halma"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "The great race",
@@ -15114,7 +16154,8 @@
       "Players: Games with expansions that add solo play",
       "Players: Games with expansions that change player count"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "The great race Exp",
@@ -15137,7 +16178,8 @@
     "famiglie": [
       "Players: Expansions Changing Player Count"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "House of the dragon",
@@ -15166,7 +16208,8 @@
       "Crowdfunding: Kickstarter",
       "Promotional: Tantrum House"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Il padrone di casa",
@@ -15198,7 +16241,8 @@
       "Victory Points as a Resource"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Haas en schildpad",
@@ -15228,11 +16272,13 @@
       "Misc: Dice Tower Hall of Fame",
       "Promotional: Board Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "La giornata dell' umarell",
     "Posizione": "Sopra Kallax",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -15273,7 +16319,8 @@
       "Components: Meeples (Animal) / Animeeples",
       "Sports: Horse Racing"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Mantis falls",
@@ -15307,7 +16354,8 @@
       "Game: Werewolf / Mafia",
       "Theme: Survival"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Mysterium park",
@@ -15342,7 +16390,8 @@
       "Theme: Amusement Parks / Theme Parks",
       "Theme: Retro"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "The Island",
@@ -15389,7 +16438,8 @@
       "Theme: Villainy",
       "Theme: Volcanoes"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "L'alpinista",
@@ -15416,11 +16466,13 @@
       "Theme: Mountains",
       "Traditional Games: Game of Goose"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Sherlock colors",
     "Posizione": "Sopra Kallax",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -15455,7 +16507,8 @@
       "Setting: Dungeons & Dragons",
       "Theme: Wizards"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "One deck dungeon",
@@ -15500,7 +16553,8 @@
       "Series: Winzige Welten (Schwerkraft-Verlag)",
       "Theme: Boss Battle"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Space race",
@@ -15522,7 +16576,8 @@
       "Trading"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Lock down",
@@ -15550,21 +16605,40 @@
       "Digital Implementations: TableTop Simulator Mod (TTS)",
       "Series: Down in Flames (Dan Verssen)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Lawer up",
     "Posizione": "Sopra Kallax",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
-    "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Lawer up\""
+    "annotazioni": null,
+    "bgg_id": "267401",
+    "giocatori_min": 1,
+    "giocatori_max": 2,
+    "durata_minuti": 75,
+    "peso": 2.65,
+    "tipo": [
+      "Thematic"
+    ],
+    "categorie": [
+      "Card Game"
+    ],
+    "meccaniche": [
+      "Area Majority / Influence",
+      "Open Drafting",
+      "Pattern Building",
+      "Set Collection",
+      "Tug of War"
+    ],
+    "famiglie": [
+      "Crowdfunding: Kickstarter",
+      "Digital Implementations: Tabletopia",
+      "Misc: LongPack Games",
+      "Misc: Watch It Played How To Videos",
+      "Players: Two-Player Only Games",
+      "Theme: Attorneys / Courts"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Cava vs Cava",
@@ -15590,7 +16664,8 @@
       "Magazine: Panzerschreck (Minden Games)",
       "Players: Two-Player Only Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Le Havre ancora in porto",
@@ -15619,7 +16694,8 @@
       "Series: Fur Zwei Spieler (Lookout Games)",
       "Versions & Editions: Two-Player Versions of More-Player Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Inca Empire",
@@ -15645,21 +16721,36 @@
       "Country: Peru",
       "Theme: Native Americans / First Peoples"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Small railroad empires -scenario pack2-",
     "Posizione": "Sopra Kallax",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
-    "peso": null,
+    "annotazioni": "scenario pack 2",
+    "bgg_id": "299178",
+    "giocatori_min": 1,
+    "giocatori_max": 4,
+    "durata_minuti": 60,
+    "peso": 2.3,
     "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Small railroad empires -scenario pack2-\""
+    "categorie": [
+      "Trains",
+      "Transportation"
+    ],
+    "meccaniche": [
+      "Hexagon Grid",
+      "Modular Board",
+      "Open Drafting",
+      "Pick-up and Deliver",
+      "Set Collection",
+      "Variable Player Powers"
+    ],
+    "famiglie": [
+      "Digital Implementations: Tabletopia",
+      "Series: Small Empires (Archona Games)"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Small railroad empires",
@@ -15686,7 +16777,8 @@
       "Digital Implementations: Tabletopia",
       "Series: Small Empires (Archona Games)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Ticket to ride new York",
@@ -15708,7 +16800,8 @@
     "famiglie": [
       "Game: Ticket to Ride (fan expansions)"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "10 days Europe",
@@ -15735,7 +16828,8 @@
       "Misc: Mensa Select",
       "Series: 10 Days in ..."
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Tutankhamun",
@@ -15764,7 +16858,8 @@
       "Historical Figures: King Tutankhamun (King Tut)",
       "Mythology: Egyptian"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Catan il duello",
@@ -15796,7 +16891,8 @@
       "Series: Two-player games (Kosmos)",
       "Versions & Editions: Two-Player Versions of More-Player Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Agricola “tutte le creature grandi e piccole” Big Box",
@@ -15831,7 +16927,8 @@
       "Versions & Editions: Big Box Versions of Individual Games",
       "Versions & Editions: Two-Player Versions of More-Player Games"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": "tutte le creature grandi e piccole"
   },
   {
     "Gioco": "Pakal",
@@ -15856,7 +16953,8 @@
     "famiglie": [
       "Digital Implementations: Tabletopia"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Omnia",
@@ -15881,7 +16979,8 @@
       "Country: Italy",
       "Historical Figures: Leonardo da Vinci"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Dice run",
@@ -15907,11 +17006,13 @@
       "Components: Coloured Dice",
       "Sports: Athletics / Track and Field"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Box Hunters Texas",
     "Posizione": "Sopra Kallax",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -15941,7 +17042,8 @@
     "famiglie": [
       "Theme: Burglary and Heists"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "It’s a wonderful world",
@@ -15980,7 +17082,8 @@
       "Mechanism: Tableau Building",
       "Players: Games with Solitaire Rules"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Rome & roll",
@@ -16015,7 +17118,8 @@
       "Mechanism: Roll-and-Write",
       "Occupation: Architect"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Competitors",
@@ -16038,7 +17142,8 @@
       "Variable Player Powers"
     ],
     "famiglie": [],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Parma calcio",
@@ -16061,25 +17166,39 @@
       "Country: Italy",
       "Sports: Football / Soccer"
     ],
-    "bgg_errore": null
+    "bgg_errore": null,
+    "annotazioni": null
   },
   {
     "Gioco": "Key Forge",
     "Posizione": "Sopra Kallax",
-    "bgg_id": null,
-    "giocatori_min": null,
-    "giocatori_max": null,
-    "durata_minuti": null,
+    "annotazioni": null,
+    "bgg_id": "339074",
+    "giocatori_min": 1,
+    "giocatori_max": 3,
+    "durata_minuti": 90,
     "peso": null,
     "tipo": [],
-    "categorie": [],
-    "meccaniche": [],
-    "famiglie": [],
-    "bgg_errore": "Nessun gioco trovato su BGG per \"Key Forge\""
+    "categorie": [
+      "Expansion for Base-game",
+      "Card Game",
+      "Fantasy",
+      "Print & Play"
+    ],
+    "meccaniche": [
+      "Cooperative Game",
+      "Solo / Solitaire Game"
+    ],
+    "famiglie": [
+      "Components: Unique Game",
+      "Game: KeyForge"
+    ],
+    "bgg_errore": null
   },
   {
     "Gioco": "Hystory Games #1",
     "Posizione": "Sopra Kallax",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -16094,6 +17213,7 @@
   {
     "Gioco": "Hystory Games #2",
     "Posizione": "Sopra Kallax",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,
@@ -16108,6 +17228,7 @@
   {
     "Gioco": "Hystory Games #3",
     "Posizione": "Sopra Kallax",
+    "annotazioni": null,
     "bgg_id": null,
     "giocatori_min": null,
     "giocatori_max": null,

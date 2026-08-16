@@ -8,6 +8,11 @@ Game, ...), categorie, meccaniche e famiglie. Scrive un JSON completo (dati
 del registro + dati BGG) in `output/catalogo_bgg.json`. La cartella `legacy/`
 viene solo letta, mai scritta.
 
+Il campo "Gioco" nell'output resta sempre il testo esatto del registro. Il
+testo tra parentesi/virgolette nel nome (es. "Kites “il tempo vola”") viene
+estratto nel campo "annotazioni"; un piccolo dizionario di correzioni
+(CORREZIONI_NOME) sistema i refusi noti solo ai fini della ricerca su BGG.
+
 Uso:
     export BGG_API_TOKEN="il-tuo-token"
     python3 scripts/bgg_lookup.py                       # elabora tutto il registro
@@ -30,6 +35,7 @@ import argparse
 import json
 import os
 import random
+import re
 import sys
 import time
 import xml.etree.ElementTree as ET
@@ -64,6 +70,63 @@ DEFAULT_REQUEST_DELAY = 5.0  # secondi tra una scheda e l'altra, per rispettare 
 def _jitter(seconds: float, spread: float) -> float:
     """Aggiunge un jitter casuale a un delay, per evitare un pattern di richieste troppo regolare."""
     return seconds + random.uniform(0, spread)
+
+
+PAREN_PATTERN = re.compile(r"\(([^)]*)\)")
+QUOTE_PATTERN = re.compile(r"[“‘\"]([^”’\"]*)[”’\"]")
+
+# Correzioni puntuali: nome esatto come scritto nel registro -> (nome corretto
+# per la ricerca BGG, eventuale annotazione aggiuntiva). Il campo "Gioco"
+# nell'output resta SEMPRE il testo originale del registro (mai modificato);
+# queste correzioni servono solo a migliorare il matching su BGG.
+CORREZIONI_NOME: dict[str, tuple[str, str | None]] = {
+    "Don Quizote": ("Don Quixote", None),
+    "Hight Frontier 4 all": ("High Frontier 4 All", None),
+    "Knititng Circle": ("Knitting Circle", None),
+    "Lawer up": ("Lawyer Up", None),
+    "Rollinng Village": ("Rolling Village", None),
+    "Terraforming Mars Ares expeditions": ("Terraforming Mars: Ares Expedition", None),
+    "Nemesis carnomorph expansion": ("Nemesis: Carnomorphs Expansion", None),
+    "Paxpamir": ("Pax Pamir", None),
+    "De Vulgari Eloquenzia": ("De Vulgari Eloquentia", None),
+    "Key Forge": ("KeyForge", None),
+    "Poolce!": ("Police!", None),
+    "In Initere: dal Po a Luni": ("In itinere: dal Po a Luni", None),
+    "Flame Rouge - Peloton": ("Flamme Rouge: Peloton", None),
+    "Mr. President - Updated Kit": ("Mr. President", "Updated Kit"),
+    "Alta Tensione - gioco di carte": ("Alta Tensione", "gioco di carte"),
+    "Le barricate -Parma1922-": ("Le barricate", "Parma 1922"),
+    "Small railroad empires -scenario pack2-": ("Small Railroad Empires", "scenario pack 2"),
+    "Dectetive sulla scena del crimine - Stagione 1": (
+        "Detective: sulla scena del crimine",
+        "Stagione 1",
+    ),
+}
+
+
+def _pulisci_nome_generico(nome_grezzo: str) -> tuple[str, str | None]:
+    """Estrae annotazioni tra parentesi/virgolette dal nome, quando non c'e' una correzione puntuale."""
+    annotazioni = []
+    testo = nome_grezzo
+
+    parentesi = PAREN_PATTERN.findall(testo)
+    testo = PAREN_PATTERN.sub(" ", testo)
+    annotazioni.extend(a.strip() for a in parentesi if a.strip())
+
+    virgolette = QUOTE_PATTERN.findall(testo)
+    testo = QUOTE_PATTERN.sub(" ", testo)
+    annotazioni.extend(a.strip() for a in virgolette if a.strip())
+
+    nome_pulito = re.sub(r"\s+", " ", testo).strip(" -")
+    annotazione = "; ".join(annotazioni) if annotazioni else None
+    return (nome_pulito or nome_grezzo), annotazione
+
+
+def _pulisci_nome(nome_grezzo: str) -> tuple[str, str | None]:
+    """Restituisce (nome da usare per la ricerca BGG, annotazione estratta dal nome originale)."""
+    if nome_grezzo in CORREZIONI_NOME:
+        return CORREZIONI_NOME[nome_grezzo]
+    return _pulisci_nome_generico(nome_grezzo)
 
 
 class BggError(Exception):
@@ -101,8 +164,10 @@ class BggGameInfo:
 
 @dataclass
 class RegistroEntry:
-    gioco: str
+    gioco: str  # nome originale dal registro, mai modificato: identita' della riga
     posizione: str
+    nome_ricerca: str  # nome ripulito/corretto usato per interrogare BGG
+    annotazioni: str | None  # testo tra parentesi/virgolette estratto dal nome originale
 
 
 def _auth_headers(token: str) -> dict:
@@ -315,10 +380,14 @@ def read_registro(
         if not gioco:
             continue
         posizione = riga[indici["Posizione"]] or ""
+        gioco_str = str(gioco).strip()
+        nome_ricerca, annotazioni = _pulisci_nome(gioco_str)
         voci.append(
             RegistroEntry(
-                gioco=str(gioco).strip(),
+                gioco=gioco_str,
                 posizione=str(posizione).strip(),
+                nome_ricerca=nome_ricerca,
+                annotazioni=annotazioni,
             )
         )
     return voci
@@ -348,18 +417,25 @@ def build_catalog(
     # Chiave (Gioco, Posizione) invece del solo nome: il registro puo' avere lo
     # stesso titolo su piu' righe (copie fisiche diverse in posizioni diverse),
     # e deduplicare per solo nome ne perderebbe silenziosamente le altre copie.
+    by_key = {(voce.gioco, voce.posizione): voce for voce in voci}
+
     risultati: list[dict] = []
     gia_elaborati: set[tuple[str, str]] = set()
     if resume and output_path.exists():
         with open(output_path, encoding="utf-8") as f:
             precedenti = json.load(f)
         da_ritentare = 0
-        for voce in precedenti:
-            if voce.get("bgg_errore"):
+        for voce_salvata in precedenti:
+            if voce_salvata.get("bgg_errore"):
                 da_ritentare += 1
                 continue
-            risultati.append(voce)
-            gia_elaborati.add((voce["Gioco"], voce["Posizione"]))
+            chiave = (voce_salvata["Gioco"], voce_salvata["Posizione"])
+            # Backfill di "annotazioni" per i record salvati prima che il campo esistesse.
+            voce_corrispondente = by_key.get(chiave)
+            if voce_corrispondente is not None:
+                voce_salvata.setdefault("annotazioni", voce_corrispondente.annotazioni)
+            risultati.append(voce_salvata)
+            gia_elaborati.add(chiave)
         print(
             f"Ripresa: {len(gia_elaborati)} gia' completati, {da_ritentare} da ritentare.",
             file=sys.stderr,
@@ -369,10 +445,14 @@ def build_catalog(
         if (voce.gioco, voce.posizione) in gia_elaborati:
             continue
 
-        print(f"[{i}/{len(voci)}] {voce.gioco} ...", file=sys.stderr)
+        nota_ricerca = (
+            f" (cercato come '{voce.nome_ricerca}')" if voce.nome_ricerca != voce.gioco else ""
+        )
+        print(f"[{i}/{len(voci)}] {voce.gioco}{nota_ricerca} ...", file=sys.stderr)
         record = {
             "Gioco": voce.gioco,
             "Posizione": voce.posizione,
+            "annotazioni": voce.annotazioni,
             "bgg_id": None,
             "giocatori_min": None,
             "giocatori_max": None,
@@ -386,7 +466,7 @@ def build_catalog(
         }
 
         try:
-            info = lookup_game(voce.gioco, token)
+            info = lookup_game(voce.nome_ricerca, token)
         except BggAuthError:
             # Token non valido/non approvato: non ha senso continuare il batch.
             raise
