@@ -135,6 +135,37 @@
     background: var(--sfondo);
     color: var(--testo);
   }
+  .campo-filtro-larga {
+    grid-column: 1 / -1;
+  }
+  .etichetta-hint {
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  .chip-gruppo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .chip-gruppo-scroll {
+    max-height: 180px;
+    overflow-y: auto;
+    padding: 2px;
+  }
+  .chip {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    border: 1px solid var(--bordo);
+    border-radius: 999px;
+    background: var(--sfondo);
+    color: var(--testo);
+    cursor: pointer;
+  }
+  .chip.attivo {
+    background: var(--accento);
+    border-color: var(--accento-scuro);
+    font-weight: 600;
+  }
   .azioni-filtri {
     grid-column: 1 / -1;
     display: flex;
@@ -275,13 +306,13 @@
         <option value="3.5-5">Pesante</option>
       </select>
     </div>
-    <div class="campo-filtro">
-      <label for="filtroTipo">Tipo</label>
-      <select id="filtroTipo"><option value="">Qualsiasi</option></select>
+    <div class="campo-filtro campo-filtro-larga">
+      <label>Tipo <span class="etichetta-hint">(scegline anche più di uno)</span></label>
+      <div class="chip-gruppo" id="filtroTipo"></div>
     </div>
-    <div class="campo-filtro">
-      <label for="filtroCategoria">Categoria</label>
-      <select id="filtroCategoria"><option value="">Qualsiasi</option></select>
+    <div class="campo-filtro campo-filtro-larga">
+      <label>Categoria <span class="etichetta-hint">(scegline anche più di una)</span></label>
+      <div class="chip-gruppo chip-gruppo-scroll" id="filtroCategoria"></div>
     </div>
     <div class="azioni-filtri">
       <button type="button" id="resetFiltri">Azzera filtri</button>
@@ -307,6 +338,11 @@ let filtrati = [];
 let paginaCorrente = 1;
 const perPagina = 20;
 
+// Tipo e categoria ammettono scelta multipla: un gioco deve avere TUTTI i
+// valori selezionati (AND), non uno qualsiasi.
+const selezioneTipo = new Set();
+const selezioneCategoria = new Set();
+
 const el = {
   input: document.getElementById('inputString'),
   giocatori: document.getElementById('filtroGiocatori'),
@@ -328,8 +364,8 @@ fetch('catalogo_bgg.json', { cache: 'no-store' })
   .then(dati => {
     catalogo = dati;
     el.conteggioTotale.textContent = `${catalogo.length} giochi in libreria`;
-    popolaSelectDinamica(el.tipo, campoLista(catalogo, 'tipo'));
-    popolaSelectDinamica(el.categoria, campoLista(catalogo, 'categorie'));
+    popolaChip(el.tipo, campoLista(catalogo, 'tipo'), selezioneTipo);
+    popolaChip(el.categoria, campoLista(catalogo, 'categorie'), selezioneCategoria);
     aggiorna();
   })
   .catch(() => {
@@ -342,12 +378,27 @@ function campoLista(lista, campo) {
   return [...insieme].sort((a, b) => a.localeCompare(b, 'it'));
 }
 
-function popolaSelectDinamica(selectEl, valori) {
+function popolaChip(contenitore, valori, selezione) {
+  contenitore.innerHTML = '';
   for (const v of valori) {
-    const opt = document.createElement('option');
-    opt.value = v;
-    opt.textContent = v;
-    selectEl.appendChild(opt);
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'chip';
+    chip.textContent = v;
+    chip.setAttribute('aria-pressed', 'false');
+    chip.addEventListener('click', () => {
+      if (selezione.has(v)) {
+        selezione.delete(v);
+        chip.classList.remove('attivo');
+        chip.setAttribute('aria-pressed', 'false');
+      } else {
+        selezione.add(v);
+        chip.classList.add('attivo');
+        chip.setAttribute('aria-pressed', 'true');
+      }
+      aggiorna();
+    });
+    contenitore.appendChild(chip);
   }
 }
 
@@ -355,8 +406,6 @@ function applicaFiltri() {
   const giocatori = el.giocatori.value ? parseInt(el.giocatori.value, 10) : null;
   const durataMax = el.durata.value ? parseInt(el.durata.value, 10) : null;
   const pesoRange = el.peso.value ? el.peso.value.split('-').map(Number) : null;
-  const tipo = el.tipo.value;
-  const categoria = el.categoria.value;
 
   let risultato = catalogo.filter(g => {
     if (giocatori !== null) {
@@ -370,8 +419,19 @@ function applicaFiltri() {
       if (g.peso == null) return false;
       if (g.peso < pesoRange[0] || g.peso >= pesoRange[1]) return false;
     }
-    if (tipo && !(g.tipo || []).includes(tipo)) return false;
-    if (categoria && !(g.categorie || []).includes(categoria)) return false;
+    // AND: il gioco deve avere TUTTI i tipi/categorie selezionati, non uno qualsiasi.
+    if (selezioneTipo.size > 0) {
+      const tipiGioco = g.tipo || [];
+      for (const t of selezioneTipo) {
+        if (!tipiGioco.includes(t)) return false;
+      }
+    }
+    if (selezioneCategoria.size > 0) {
+      const categorieGioco = g.categorie || [];
+      for (const c of selezioneCategoria) {
+        if (!categorieGioco.includes(c)) return false;
+      }
+    }
     return true;
   });
 
@@ -397,8 +457,8 @@ function ricercaAttiva() {
     el.giocatori.value ||
     el.durata.value ||
     el.peso.value ||
-    el.tipo.value ||
-    el.categoria.value
+    selezioneTipo.size > 0 ||
+    selezioneCategoria.size > 0
   );
 }
 
@@ -568,14 +628,20 @@ el.input.addEventListener('input', conDebounce(aggiorna, 150));
 el.giocatori.addEventListener('input', conDebounce(aggiorna, 150));
 el.durata.addEventListener('change', aggiorna);
 el.peso.addEventListener('change', aggiorna);
-el.tipo.addEventListener('change', aggiorna);
-el.categoria.addEventListener('change', aggiorna);
 el.reset.addEventListener('click', () => {
   el.giocatori.value = '';
   el.durata.value = '';
   el.peso.value = '';
-  el.tipo.value = '';
-  el.categoria.value = '';
+  selezioneTipo.clear();
+  selezioneCategoria.clear();
+  el.tipo.querySelectorAll('.chip.attivo').forEach(c => {
+    c.classList.remove('attivo');
+    c.setAttribute('aria-pressed', 'false');
+  });
+  el.categoria.querySelectorAll('.chip.attivo').forEach(c => {
+    c.classList.remove('attivo');
+    c.setAttribute('aria-pressed', 'false');
+  });
   aggiorna();
 });
 el.prevPage.addEventListener('click', () => { paginaCorrente--; mostraPagina(); });
