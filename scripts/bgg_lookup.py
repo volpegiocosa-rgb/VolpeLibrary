@@ -49,7 +49,7 @@ LINK_TYPE_FAMILY = "boardgamefamily"
 RANK_TYPE_SUBDOMAIN = "family"  # es. Abstract/Strategy/Family/Party/Thematic/War Game Rank
 
 REQUEST_TIMEOUT = 15  # secondi
-QUEUE_RETRY_DELAY = 2  # secondi, per il retry su HTTP 202 (richiesta in coda)
+QUEUE_RETRY_DELAY = 5  # secondi, per il retry su HTTP 202 (richiesta in coda)
 RATE_LIMIT_INITIAL_DELAY = 5  # secondi, per il retry su HTTP 429 (rate limit); raddoppia ad ogni tentativo
 RATE_LIMIT_MAX_DELAY = 120  # secondi
 MAX_RETRIES = 10
@@ -108,7 +108,7 @@ class RegistroEntry:
 def _auth_headers(token: str) -> dict:
     return {
         "Authorization": f"Bearer {token}",
-        "User-Agent": "VolpeLibrary/1.0 (+bgg_lookup.py)",
+        "User-Agent": "VolpeGiocosa-DataFetcher/1.0 (+https://volpegiocosa.it)",
     }
 
 
@@ -345,8 +345,11 @@ def build_catalog(
     if limit is not None:
         voci = voci[:limit]
 
+    # Chiave (Gioco, Posizione) invece del solo nome: il registro puo' avere lo
+    # stesso titolo su piu' righe (copie fisiche diverse in posizioni diverse),
+    # e deduplicare per solo nome ne perderebbe silenziosamente le altre copie.
     risultati: list[dict] = []
-    gia_elaborati: set[str] = set()
+    gia_elaborati: set[tuple[str, str]] = set()
     if resume and output_path.exists():
         with open(output_path, encoding="utf-8") as f:
             precedenti = json.load(f)
@@ -356,14 +359,14 @@ def build_catalog(
                 da_ritentare += 1
                 continue
             risultati.append(voce)
-            gia_elaborati.add(voce["Gioco"])
+            gia_elaborati.add((voce["Gioco"], voce["Posizione"]))
         print(
             f"Ripresa: {len(gia_elaborati)} gia' completati, {da_ritentare} da ritentare.",
             file=sys.stderr,
         )
 
     for i, voce in enumerate(voci, start=1):
-        if voce.gioco in gia_elaborati:
+        if (voce.gioco, voce.posizione) in gia_elaborati:
             continue
 
         print(f"[{i}/{len(voci)}] {voce.gioco} ...", file=sys.stderr)
@@ -411,8 +414,8 @@ def build_catalog(
         if i < len(voci):
             time.sleep(_jitter(delay, spread=delay * 0.5))
 
-    ordine = {voce.gioco: i for i, voce in enumerate(voci)}
-    risultati.sort(key=lambda r: ordine.get(r["Gioco"], len(voci)))
+    ordine = {(voce.gioco, voce.posizione): i for i, voce in enumerate(voci)}
+    risultati.sort(key=lambda r: ordine.get((r["Gioco"], r["Posizione"]), len(voci)))
 
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(risultati, f, ensure_ascii=False, indent=2)
