@@ -314,6 +314,10 @@
       <label>Categoria <span class="etichetta-hint">(scegline anche più di una)</span></label>
       <div class="chip-gruppo chip-gruppo-scroll" id="filtroCategoria"></div>
     </div>
+    <div class="campo-filtro campo-filtro-larga">
+      <label>Meccaniche <span class="etichetta-hint">(scegline anche più di una)</span></label>
+      <div class="chip-gruppo chip-gruppo-scroll" id="filtroMeccaniche"></div>
+    </div>
     <div class="azioni-filtri">
       <button type="button" id="resetFiltri">Azzera filtri</button>
     </div>
@@ -338,10 +342,11 @@ let filtrati = [];
 let paginaCorrente = 1;
 const perPagina = 20;
 
-// Tipo e categoria ammettono scelta multipla: un gioco deve avere TUTTI i
-// valori selezionati (AND), non uno qualsiasi.
+// Tipo, categoria e meccaniche ammettono scelta multipla: un gioco deve
+// avere TUTTI i valori selezionati (AND), non uno qualsiasi.
 const selezioneTipo = new Set();
 const selezioneCategoria = new Set();
+const selezioneMeccaniche = new Set();
 
 const el = {
   input: document.getElementById('inputString'),
@@ -350,6 +355,7 @@ const el = {
   peso: document.getElementById('filtroPeso'),
   tipo: document.getElementById('filtroTipo'),
   categoria: document.getElementById('filtroCategoria'),
+  meccaniche: document.getElementById('filtroMeccaniche'),
   reset: document.getElementById('resetFiltri'),
   risultati: document.getElementById('risultati'),
   conteggio: document.getElementById('conteggio'),
@@ -366,6 +372,7 @@ fetch('catalogo_bgg.json', { cache: 'no-store' })
     el.conteggioTotale.textContent = `${catalogo.length} giochi in libreria`;
     popolaChip(el.tipo, campoLista(catalogo, 'tipo'), selezioneTipo);
     popolaChip(el.categoria, campoLista(catalogo, 'categorie'), selezioneCategoria);
+    popolaChip(el.meccaniche, campoLista(catalogo, 'meccaniche'), selezioneMeccaniche);
     aggiorna();
   })
   .catch(() => {
@@ -419,7 +426,7 @@ function applicaFiltri() {
       if (g.peso == null) return false;
       if (g.peso < pesoRange[0] || g.peso >= pesoRange[1]) return false;
     }
-    // AND: il gioco deve avere TUTTI i tipi/categorie selezionati, non uno qualsiasi.
+    // AND: il gioco deve avere TUTTI i tipi/categorie/meccaniche selezionati, non uno qualsiasi.
     if (selezioneTipo.size > 0) {
       const tipiGioco = g.tipo || [];
       for (const t of selezioneTipo) {
@@ -430,6 +437,12 @@ function applicaFiltri() {
       const categorieGioco = g.categorie || [];
       for (const c of selezioneCategoria) {
         if (!categorieGioco.includes(c)) return false;
+      }
+    }
+    if (selezioneMeccaniche.size > 0) {
+      const meccanicheGioco = g.meccaniche || [];
+      for (const m of selezioneMeccaniche) {
+        if (!meccanicheGioco.includes(m)) return false;
       }
     }
     return true;
@@ -458,7 +471,8 @@ function ricercaAttiva() {
     el.durata.value ||
     el.peso.value ||
     selezioneTipo.size > 0 ||
-    selezioneCategoria.size > 0
+    selezioneCategoria.size > 0 ||
+    selezioneMeccaniche.size > 0
   );
 }
 
@@ -634,13 +648,12 @@ el.reset.addEventListener('click', () => {
   el.peso.value = '';
   selezioneTipo.clear();
   selezioneCategoria.clear();
-  el.tipo.querySelectorAll('.chip.attivo').forEach(c => {
-    c.classList.remove('attivo');
-    c.setAttribute('aria-pressed', 'false');
-  });
-  el.categoria.querySelectorAll('.chip.attivo').forEach(c => {
-    c.classList.remove('attivo');
-    c.setAttribute('aria-pressed', 'false');
+  selezioneMeccaniche.clear();
+  [el.tipo, el.categoria, el.meccaniche].forEach(contenitore => {
+    contenitore.querySelectorAll('.chip.attivo').forEach(c => {
+      c.classList.remove('attivo');
+      c.setAttribute('aria-pressed', 'false');
+    });
   });
   aggiorna();
 });
