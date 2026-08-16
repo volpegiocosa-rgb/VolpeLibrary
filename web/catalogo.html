@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Libreria Volpe Giocosa</title>
+<style>
+  :root {
+    --sfondo: #fdf6ea;
+    --superficie: #ffffff;
+    --testo: #2b2420;
+    --testo-tenue: #6b6259;
+    --bordo: #e8ddc8;
+    --accento: #ffc04d;
+    --accento-scuro: #d98c1f;
+    --verde: #2e9e4f;
+    --arancio: #d98c1f;
+    --rosso: #c0392b;
+    --ombra: 0 2px 8px rgba(43, 36, 32, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --sfondo: #1c1815;
+      --superficie: #2a2420;
+      --testo: #f1e9dc;
+      --testo-tenue: #b3a99b;
+      --bordo: #3d362e;
+      --accento: #d98c1f;
+      --accento-scuro: #ffc04d;
+      --ombra: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--sfondo);
+    color: var(--testo);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .pagina {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 14px 32px;
+  }
+  header {
+    text-align: center;
+    padding: 18px 0 8px;
+  }
+  header img {
+    max-width: 140px;
+    width: 40%;
+    height: auto;
+    border-radius: 12px;
+  }
+  h1 {
+    font-size: 1.4rem;
+    margin: 10px 0 4px;
+  }
+  .sottotitolo {
+    color: var(--testo-tenue);
+    font-size: 0.9rem;
+    margin: 0 0 4px;
+  }
+
+  .barra-ricerca {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: var(--sfondo);
+    padding: 10px 0;
+  }
+  #inputString {
+    width: 100%;
+    font-size: 1.05rem;
+    padding: 14px 16px;
+    border: 2px solid var(--bordo);
+    border-radius: 12px;
+    background: var(--superficie);
+    color: var(--testo);
+  }
+  #inputString:focus {
+    outline: none;
+    border-color: var(--accento-scuro);
+  }
+
+  details.filtri {
+    background: var(--superficie);
+    border: 1px solid var(--bordo);
+    border-radius: 12px;
+    margin: 10px 0;
+    box-shadow: var(--ombra);
+  }
+  details.filtri summary {
+    padding: 12px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  details.filtri summary::-webkit-details-marker { display: none; }
+  details.filtri summary::after {
+    content: "▾";
+    transition: transform 0.15s;
+    color: var(--testo-tenue);
+  }
+  details.filtri[open] summary::after { transform: rotate(180deg); }
+
+  .griglia-filtri {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    padding: 4px 16px 16px;
+  }
+  .campo-filtro label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--testo-tenue);
+    margin-bottom: 4px;
+  }
+  .campo-filtro input,
+  .campo-filtro select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--bordo);
+    border-radius: 8px;
+    background: var(--sfondo);
+    color: var(--testo);
+  }
+  .azioni-filtri {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #resetFiltri {
+    background: none;
+    border: none;
+    color: var(--accento-scuro);
+    font-size: 0.9rem;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  #conteggio {
+    color: var(--testo-tenue);
+    font-size: 0.85rem;
+    margin: 12px 2px 8px;
+  }
+
+  .risultati {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .scheda {
+    background: var(--superficie);
+    border: 1px solid var(--bordo);
+    border-radius: 12px;
+    padding: 12px 14px;
+    box-shadow: var(--ombra);
+  }
+  .scheda-intestazione {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .scheda-intestazione h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    flex: 1;
+  }
+  .rilevanza { font-size: 0.9rem; }
+  .annotazione {
+    margin: 2px 0 0;
+    font-size: 0.85rem;
+    color: var(--testo-tenue);
+    font-style: italic;
+  }
+  .posizione {
+    margin: 8px 0 0;
+    font-weight: 600;
+    color: var(--accento-scuro);
+  }
+  .badge-riga {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+  .badge {
+    background: var(--sfondo);
+    border: 1px solid var(--bordo);
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    color: var(--testo);
+    white-space: nowrap;
+  }
+  .senza-dati {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: var(--testo-tenue);
+  }
+
+  #pagination {
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+  #pagination button {
+    padding: 10px 16px;
+    border: 1px solid var(--bordo);
+    background: var(--superficie);
+    color: var(--testo);
+    border-radius: 10px;
+    font-size: 0.95rem;
+  }
+  #pagination button:disabled { opacity: 0.4; }
+  #pageInfo { color: var(--testo-tenue); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<div class="pagina">
+
+<header>
+  <img src="catalogo-volpe.jpeg" alt="Clown che esce dalla scatola dei giochi di Volpe Giocosa">
+  <h1>La scatola dei giochi</h1>
+  <p class="sottotitolo" id="conteggioTotale">Caricamento libreria...</p>
+</header>
+
+<div class="barra-ricerca">
+  <input type="text" id="inputString" placeholder="Cerca un gioco per nome..." autocomplete="off">
+</div>
+
+<details class="filtri" id="pannelloFiltri">
+  <summary>Filtri per scegliere cosa giocare 🎲</summary>
+  <div class="griglia-filtri">
+    <div class="campo-filtro">
+      <label for="filtroGiocatori">In quanti siete?</label>
+      <input type="number" id="filtroGiocatori" min="1" placeholder="es. 4">
+    </div>
+    <div class="campo-filtro">
+      <label for="filtroDurata">Durata massima</label>
+      <select id="filtroDurata">
+        <option value="">Qualsiasi</option>
+        <option value="30">Fino a 30 min</option>
+        <option value="60">Fino a 60 min</option>
+        <option value="90">Fino a 90 min</option>
+        <option value="120">Fino a 120 min</option>
+      </select>
+    </div>
+    <div class="campo-filtro">
+      <label for="filtroPeso">Complessità</label>
+      <select id="filtroPeso">
+        <option value="">Qualsiasi</option>
+        <option value="0-1.5">Leggera</option>
+        <option value="1.5-2.5">Media</option>
+        <option value="2.5-3.5">Impegnativa</option>
+        <option value="3.5-5">Pesante</option>
+      </select>
+    </div>
+    <div class="campo-filtro">
+      <label for="filtroTipo">Tipo</label>
+      <select id="filtroTipo"><option value="">Qualsiasi</option></select>
+    </div>
+    <div class="campo-filtro">
+      <label for="filtroCategoria">Categoria</label>
+      <select id="filtroCategoria"><option value="">Qualsiasi</option></select>
+    </div>
+    <div class="azioni-filtri">
+      <button type="button" id="resetFiltri">Azzera filtri</button>
+    </div>
+  </div>
+</details>
+
+<p id="conteggio"></p>
+
+<div class="risultati" id="risultati"></div>
+
+<div id="pagination">
+  <button id="prevPage">⬅️ Precedente</button>
+  <span id="pageInfo">1/1</span>
+  <button id="nextPage">Successiva ➡️</button>
+</div>
+
+</div>
+
+<script>
+let catalogo = [];
+let filtrati = [];
+let paginaCorrente = 1;
+const perPagina = 20;
+
+const el = {
+  input: document.getElementById('inputString'),
+  giocatori: document.getElementById('filtroGiocatori'),
+  durata: document.getElementById('filtroDurata'),
+  peso: document.getElementById('filtroPeso'),
+  tipo: document.getElementById('filtroTipo'),
+  categoria: document.getElementById('filtroCategoria'),
+  reset: document.getElementById('resetFiltri'),
+  risultati: document.getElementById('risultati'),
+  conteggio: document.getElementById('conteggio'),
+  conteggioTotale: document.getElementById('conteggioTotale'),
+  prevPage: document.getElementById('prevPage'),
+  nextPage: document.getElementById('nextPage'),
+  pageInfo: document.getElementById('pageInfo'),
+};
+
+fetch('catalogo_bgg.json', { cache: 'no-store' })
+  .then(r => r.json())
+  .then(dati => {
+    catalogo = dati;
+    el.conteggioTotale.textContent = `${catalogo.length} giochi in libreria`;
+    popolaSelectDinamica(el.tipo, campoLista(catalogo, 'tipo'));
+    popolaSelectDinamica(el.categoria, campoLista(catalogo, 'categorie'));
+    aggiorna();
+  })
+  .catch(() => {
+    el.conteggioTotale.textContent = 'Impossibile caricare la libreria.';
+  });
+
+function campoLista(lista, campo) {
+  const insieme = new Set();
+  lista.forEach(g => (g[campo] || []).forEach(v => insieme.add(v)));
+  return [...insieme].sort((a, b) => a.localeCompare(b, 'it'));
+}
+
+function popolaSelectDinamica(selectEl, valori) {
+  for (const v of valori) {
+    const opt = document.createElement('option');
+    opt.value = v;
+    opt.textContent = v;
+    selectEl.appendChild(opt);
+  }
+}
+
+function applicaFiltri() {
+  const giocatori = el.giocatori.value ? parseInt(el.giocatori.value, 10) : null;
+  const durataMax = el.durata.value ? parseInt(el.durata.value, 10) : null;
+  const pesoRange = el.peso.value ? el.peso.value.split('-').map(Number) : null;
+  const tipo = el.tipo.value;
+  const categoria = el.categoria.value;
+
+  let risultato = catalogo.filter(g => {
+    if (giocatori !== null) {
+      if (g.giocatori_min == null || g.giocatori_max == null) return false;
+      if (giocatori < g.giocatori_min || giocatori > g.giocatori_max) return false;
+    }
+    if (durataMax !== null) {
+      if (g.durata_minuti == null || g.durata_minuti > durataMax) return false;
+    }
+    if (pesoRange) {
+      if (g.peso == null) return false;
+      if (g.peso < pesoRange[0] || g.peso >= pesoRange[1]) return false;
+    }
+    if (tipo && !(g.tipo || []).includes(tipo)) return false;
+    if (categoria && !(g.categorie || []).includes(categoria)) return false;
+    return true;
+  });
+
+  const query = el.input.value.toLowerCase().trim();
+  if (query) {
+    risultato = risultato.map(g => {
+      let dist = distanzaLevenshteinSenzaSpazi(query, g.Gioco.toLowerCase());
+      if (contieneStringa(g.Gioco, query)) dist = Math.min(dist, 1);
+      return { ...g, _dist: dist };
+    });
+    risultato.sort((a, b) => a._dist - b._dist);
+  } else {
+    risultato = risultato.map(g => ({ ...g, _dist: 0 }));
+    risultato.sort((a, b) => a.Gioco.localeCompare(b.Gioco, 'it'));
+  }
+
+  return risultato;
+}
+
+function aggiorna() {
+  filtrati = applicaFiltri();
+  paginaCorrente = 1;
+  mostraPagina();
+}
+
+function mostraPagina() {
+  el.risultati.innerHTML = '';
+  const query = el.input.value.trim();
+
+  const inizio = (paginaCorrente - 1) * perPagina;
+  const fine = Math.min(inizio + perPagina, filtrati.length);
+
+  for (let i = inizio; i < fine; i++) {
+    el.risultati.appendChild(creaScheda(filtrati[i], !!query));
+  }
+
+  el.conteggio.textContent = filtrati.length === catalogo.length
+    ? `${filtrati.length} giochi`
+    : `${filtrati.length} giochi trovati`;
+
+  const totalePagine = Math.max(1, Math.ceil(filtrati.length / perPagina));
+  el.pageInfo.textContent = `${paginaCorrente}/${totalePagine}`;
+  el.prevPage.disabled = paginaCorrente === 1;
+  el.nextPage.disabled = paginaCorrente === totalePagine;
+}
+
+function creaScheda(gioco, mostraRilevanza) {
+  const scheda = document.createElement('div');
+  scheda.className = 'scheda';
+
+  const intestazione = document.createElement('div');
+  intestazione.className = 'scheda-intestazione';
+
+  if (mostraRilevanza) {
+    const puntino = document.createElement('span');
+    puntino.className = 'rilevanza';
+    puntino.textContent = gioco._dist <= 1 ? '🟢' : gioco._dist <= 2 ? '🟠' : '🔴';
+    intestazione.appendChild(puntino);
+  }
+
+  const titolo = document.createElement('h3');
+  titolo.textContent = gioco.Gioco;
+  intestazione.appendChild(titolo);
+  scheda.appendChild(intestazione);
+
+  if (gioco.annotazioni) {
+    const nota = document.createElement('p');
+    nota.className = 'annotazione';
+    nota.textContent = gioco.annotazioni;
+    scheda.appendChild(nota);
+  }
+
+  const posizione = document.createElement('p');
+  posizione.className = 'posizione';
+  posizione.textContent = `📍 ${gioco.Posizione}`;
+  scheda.appendChild(posizione);
+
+  const badgeRiga = document.createElement('div');
+  badgeRiga.className = 'badge-riga';
+
+  const badge = (testo) => {
+    const b = document.createElement('span');
+    b.className = 'badge';
+    b.textContent = testo;
+    badgeRiga.appendChild(b);
+  };
+
+  if (gioco.giocatori_min != null && gioco.giocatori_max != null) {
+    badge(gioco.giocatori_min === gioco.giocatori_max
+      ? `👥 ${gioco.giocatori_min}`
+      : `👥 ${gioco.giocatori_min}–${gioco.giocatori_max}`);
+  }
+  if (gioco.durata_minuti != null) badge(`⏱️ ${gioco.durata_minuti} min`);
+  if (gioco.peso != null) badge(`⚖️ ${gioco.peso.toFixed(1)}`);
+  (gioco.tipo || []).forEach(t => badge(`🏷️ ${t}`));
+
+  if (badgeRiga.childNodes.length > 0) {
+    scheda.appendChild(badgeRiga);
+  } else if (gioco.bgg_errore) {
+    const senzaDati = document.createElement('p');
+    senzaDati.className = 'senza-dati';
+    senzaDati.textContent = 'Dettagli non disponibili su BGG';
+    scheda.appendChild(senzaDati);
+  }
+
+  return scheda;
+}
+
+function distanzaLevenshteinSenzaSpazi(a, b) {
+  const pulisci = s => s.replace(/[\s.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
+  const x = pulisci(a);
+  const y = pulisci(b);
+  const m = x.length, n = y.length;
+  const matrice = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+  for (let i = 0; i <= m; i++) matrice[i][0] = i;
+  for (let j = 0; j <= n; j++) matrice[0][j] = j;
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      const costo = x[i - 1] === y[j - 1] ? 0 : 1;
+      matrice[i][j] = Math.min(
+        matrice[i - 1][j] + 1,
+        matrice[i][j - 1] + 1,
+        matrice[i - 1][j - 1] + costo
+      );
+    }
+  }
+  return matrice[m][n];
+}
+
+function contieneStringa(base, sotto) {
+  return base.toLowerCase().includes(sotto.toLowerCase());
+}
+
+let timerDebounce;
+function conDebounce(fn, ritardo) {
+  return (...args) => {
+    clearTimeout(timerDebounce);
+    timerDebounce = setTimeout(() => fn(...args), ritardo);
+  };
+}
+
+el.input.addEventListener('input', conDebounce(aggiorna, 150));
+el.giocatori.addEventListener('input', conDebounce(aggiorna, 150));
+el.durata.addEventListener('change', aggiorna);
+el.peso.addEventListener('change', aggiorna);
+el.tipo.addEventListener('change', aggiorna);
+el.categoria.addEventListener('change', aggiorna);
+el.reset.addEventListener('click', () => {
+  el.giocatori.value = '';
+  el.durata.value = '';
+  el.peso.value = '';
+  el.tipo.value = '';
+  el.categoria.value = '';
+  aggiorna();
+});
+el.prevPage.addEventListener('click', () => { paginaCorrente--; mostraPagina(); });
+el.nextPage.addEventListener('click', () => { paginaCorrente++; mostraPagina(); });
+</script>
+</body>
+</html>
