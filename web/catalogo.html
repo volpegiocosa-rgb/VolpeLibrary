@@ -372,7 +372,7 @@ function applicaFiltri() {
   const query = el.input.value.toLowerCase().trim();
   if (query) {
     risultato = risultato.map(g => {
-      let dist = distanzaLevenshteinSenzaSpazi(query, g.Gioco.toLowerCase());
+      let dist = distanzaMigliore(query, g.Gioco.toLowerCase());
       if (contieneStringa(g.Gioco, query)) dist = Math.min(dist, 1);
       return { ...g, _dist: dist };
     });
@@ -472,6 +472,29 @@ function creaScheda(gioco, mostraRilevanza) {
   }
 
   return scheda;
+}
+
+function distanzaMigliore(query, titolo) {
+  // Oltre al confronto sull'intera stringa, prova la query anche contro ogni
+  // "finestra" di parole del titolo della stessa lunghezza (in parole) della
+  // query: cosi' una query di una parola trova un buon match anche dentro un
+  // titolo composto (es. "katan" dentro "I coloni di Catan"), non solo
+  // quando corrisponde all'intero titolo.
+  let migliore = distanzaLevenshteinSenzaSpazi(query, titolo);
+  const lunghezzaQuery = query.replace(/\s+/g, '').length;
+  const paroleQuery = query.split(/\s+/).filter(Boolean);
+  const paroleTitolo = titolo.split(/\s+/).filter(Boolean);
+  const n = paroleQuery.length;
+  for (let i = 0; i + n <= paroleTitolo.length; i++) {
+    const finestra = paroleTitolo.slice(i, i + n).join(' ');
+    // Ignora finestre troppo corte rispetto alla query: eviterebbero falsi
+    // positivi (es. query di 5 lettere che "per caso" somiglia a una parola
+    // di 2-3 lettere come un numero o un articolo nel titolo).
+    if (finestra.replace(/\s+/g, '').length < lunghezzaQuery * 0.6) continue;
+    const d = distanzaLevenshteinSenzaSpazi(query, finestra);
+    if (d < migliore) migliore = d;
+  }
+  return migliore;
 }
 
 function distanzaLevenshteinSenzaSpazi(a, b) {
