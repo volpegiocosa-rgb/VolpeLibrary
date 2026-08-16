@@ -209,6 +209,12 @@
     font-size: 0.8rem;
     color: var(--testo-tenue);
   }
+  .stato-vuoto {
+    text-align: center;
+    color: var(--testo-tenue);
+    padding: 32px 16px;
+    font-size: 0.95rem;
+  }
 
   #pagination {
     margin: 20px 0 0;
@@ -385,10 +391,38 @@ function applicaFiltri() {
   return risultato;
 }
 
+function ricercaAttiva() {
+  return !!(
+    el.input.value.trim() ||
+    el.giocatori.value ||
+    el.durata.value ||
+    el.peso.value ||
+    el.tipo.value ||
+    el.categoria.value
+  );
+}
+
 function aggiorna() {
-  filtrati = applicaFiltri();
   paginaCorrente = 1;
+  if (!ricercaAttiva()) {
+    filtrati = [];
+    mostraStatoIniziale();
+    return;
+  }
+  filtrati = applicaFiltri();
   mostraPagina();
+}
+
+function mostraStatoIniziale() {
+  el.risultati.innerHTML = '';
+  const placeholder = document.createElement('p');
+  placeholder.className = 'stato-vuoto';
+  placeholder.textContent = 'Cerca un gioco per nome, oppure usa i filtri qui sopra per iniziare.';
+  el.risultati.appendChild(placeholder);
+  el.conteggio.textContent = '';
+  el.pageInfo.textContent = '';
+  el.prevPage.disabled = true;
+  el.nextPage.disabled = true;
 }
 
 function mostraPagina() {
